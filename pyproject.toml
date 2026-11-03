@@ -21,7 +21,7 @@ figures = ["matplotlib==3.10.7"]
 probe = ["torch==2.8.0", "transformers", "huggingface_hub", "pillow"]
 
 [project.urls]
-Repository = "https://github.com/anonymous/frost"
+Repository = "https://github.com/Mi3-Lab/FROST"
 
 [tool.setuptools.packages.find]
 include = ["frost*"]
