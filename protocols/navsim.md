@@ -12,7 +12,7 @@ Registered on 28/10/2026, before any inference of these models on GPU. The setup
 
 In diffusion planners of another family (Xiaomi, HUST), does the deterministic few-step integrator also act as a lower temperature? And does temperature explain what few steps change in PDMS, ADE_1 and decisions?
 
-This is the main criticism of the reviewers: the positive replication comes from a single family.
+This was the main criticism in internal review: the positive replication comes from a single family.
 
 ## Models
 

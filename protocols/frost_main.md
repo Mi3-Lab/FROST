@@ -173,7 +173,7 @@ The result is reported as an extension: it does not convert 13b into a success.
 
 ## Addendum 15 (28/10 07:40, commit time; the draft said "~09h" by mistake): Heun-3/5 controls of R1 and A2 on the out-of-training clips
 
-Registered before running. Request from the three reviewers of round 9: the controls that discriminate the test (Heun-3/5) exist only for A1.5.
+Registered before running. Raised in internal review (round 9): the controls that discriminate the test (Heun-3/5) exist only for A1.5.
 
 **Design.**
 - R1 and A2, context_000-399, seeds 9201-9206.
@@ -286,7 +286,7 @@ The log is local, not a public record. The paper must say so.
 
 ## Addendum 18 (29/10/2026 14:43 PDT, before running): convergence of the reference and resolution of the tau grid
 
-**Reason.** The three independent reviewers of the round of 29/10 ask that the Heun-32 reference and the interpolation on the tau grid (step 0.1) not decide the verdict on E_10.
+**Reason.** The internal review round of 29/10 asked that the Heun-32 reference and the interpolation on the tau grid (step 0.1) not decide the verdict on E_10.
 
 **Sample.** Alpamayo-1.5, held-out clips context_000-099 (the first 100), seeds 9201-9206, same initial noise.
 
@@ -403,7 +403,7 @@ The results will be reported whatever they are.
 
 ## Addendum 22 (02/11/2026 15:20 PST, before running): inverse validation with "heated" samplers (tau > 1)
 
-**Reason.** Reviewer request: FROST was only tested with samplers that contract (tau_eff < 1) and with the scaled-noise control downward (addenda 17 and 17b). The inverse test is missing: a sampler that spreads *more* than the tau=1 reference. If dispersion matching is a measure of temperature, and not an artifact of cold samplers, it must return the right tau_eff above 1.
+**Reason.** Raised in internal review: FROST was only tested with samplers that contract (tau_eff < 1) and with the scaled-noise control downward (addenda 17 and 17b). The inverse test is missing: a sampler that spreads *more* than the tau=1 reference. If dispersion matching is a measure of temperature, and not an artifact of cold samplers, it must return the right tau_eff above 1.
 
 **Run.** Same 400 held-out clips (held-out contexts v3, context_000-399), same seeds (9201-9206), same initial noise and same reasoning (language seed 123), probes unchanged (the temperature probe for A1.5, the multi-model temperature probe for R1):
 - **Extended curve:** Heun-32 starting from tau*z, tau in {1.1; 1.2; 1.3}.
