@@ -1,0 +1,23 @@
+{
+  "scope": "Cache PhysicalAI-AV test-split clips in the native solver-probe format, with logged future.\n\nOne clip per dataset chunk, sampled with a fixed seed before any solver result.\nThe logged future is the human driver's trajectory, not a unique correct action.\n",
+  "split": "test",
+  "seed": 20261027,
+  "requested": 400,
+  "excluded_chunks": 0,
+  "aligned_split": "artifacts/physicalai_splits_20261027/splits/alpamayo_aligned.parquet",
+  "contexts": 400,
+  "t0_us": 5100000,
+  "camera_indices": [
+    0,
+    1,
+    2,
+    6
+  ],
+  "image_layout": "[camera,time,height,width,RGB]",
+  "source_sha256": "456e5471a4e978ad29649e6054a5efdf48b1d228cd5eb6e064cd2c845911d143",
+  "limitations": [
+    "Logged future is one human trajectory, not the unique correct action",
+    "Split membership from clip_index.parquet; Alpamayo training exposure to test clips is not independently verified",
+    "One t0 per clip"
+  ]
+}

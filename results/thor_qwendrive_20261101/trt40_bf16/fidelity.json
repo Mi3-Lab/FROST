@@ -1,0 +1,25 @@
+{
+ "n": 40,
+ "text_identical": 38,
+ "dplan_cm_median_p90_max": [
+  36.0,
+  57.7,
+  109.6
+ ],
+ "dplan_cm_text_identical": [
+  36.0,
+  56.4,
+  76.0
+ ],
+ "spread_ratio": 1.1756,
+ "spread_ci95": [
+  1.123,
+  1.2358
+ ],
+ "spread_run_m": 0.1168,
+ "spread_ref_m": 0.0994,
+ "differing_clips": [
+  "context_014",
+  "context_034"
+ ]
+}

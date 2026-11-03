@@ -1,0 +1,954 @@
+{
+ "engines": "../../engines/fp8_s1",
+ "field": "<FROST_THOR_ROOT>/trt/engines/fp8tv2_b1_L3456.engine",
+ "clips": [
+  0,
+  3
+ ],
+ "repeats": 2,
+ "median": {
+  "host_ms": 31.581450952216983,
+  "npz_load_ms": 297.43505362421274,
+  "vision_ms": 146.4124298095703,
+  "prefill_ms": 351.7219696044922,
+  "decode_plain_ms_per_token": 47.89275072107557,
+  "decode_graph_ms_per_token": 46.55881797953043,
+  "decode_graph_ms": 744.4614795967937,
+  "n_decode": 16.0,
+  "e10_ms": 195.42137230746448,
+  "e4_ms": 79.00674070697278,
+  "total_e10_ms": 1466.4299876894802,
+  "total_e4_ms": 1350.0427337130532
+ },
+ "engine_meta": {
+  "vision.engine": null,
+  "head.engine": null,
+  "chunk0.engine": {
+   "trt": "10.10.0",
+   "onnx": "../../onnx/fp8_sideout/chunk0/chunk.onnx",
+   "profiles": [
+    {
+     "h": [
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ]
+     ],
+     "cos": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ],
+     "deepstack": [
+      [
+       3,
+       3088,
+       4096
+      ],
+      [
+       3,
+       3088,
+       4096
+      ],
+      [
+       3,
+       3088,
+       4096
+      ]
+     ]
+    },
+    {
+     "h": [
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ]
+     ],
+     "cos": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ],
+     "deepstack": [
+      [
+       3,
+       1,
+       4096
+      ],
+      [
+       3,
+       1,
+       4096
+      ],
+      [
+       3,
+       1,
+       4096
+      ]
+     ]
+    }
+   ],
+   "opt_level": 3,
+   "parse_s": 2.2438740730285645,
+   "build_s": 9.102055311203003,
+   "engine_bytes": 1742036060,
+   "n_layers": 433,
+   "device_memory_per_profile": [
+    449942016,
+    14310912
+   ],
+   "kernels_sample": [
+    "_gemm_mha_v2_myl0_9",
+    "_gemm_mha_v2_myl0_27",
+    "_gemm_mha_v2_myl0_45",
+    "_gemm_mha_v2_myl0_63",
+    "_gemm_mha_v2_myl0_81",
+    "_gemm_mha_v2_myl0_99",
+    "_gemm_mha_v2_myl0_117",
+    "_gemm_mha_v2_myl0_135",
+    "_gemm_mha_v2_myl0_153",
+    "_gemm_mha_v2_myl1_16",
+    "_gemm_mha_v2_myl1_44",
+    "_gemm_mha_v2_myl1_72"
+   ]
+  },
+  "chunk1.engine": {
+   "trt": "10.10.0",
+   "onnx": "../../onnx/fp8_sideout/chunk1/chunk.onnx",
+   "profiles": [
+    {
+     "h": [
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ]
+     ],
+     "cos": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ]
+    },
+    {
+     "h": [
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ]
+     ],
+     "cos": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ]
+    }
+   ],
+   "opt_level": 3,
+   "parse_s": 1.2363080978393555,
+   "build_s": 9.014368295669556,
+   "engine_bytes": 1742025564,
+   "n_layers": 433,
+   "device_memory_per_profile": [
+    449942016,
+    14310912
+   ],
+   "kernels_sample": [
+    "_gemm_mha_v2_myl0_9",
+    "_gemm_mha_v2_myl0_27",
+    "_gemm_mha_v2_myl0_45",
+    "_gemm_mha_v2_myl0_63",
+    "_gemm_mha_v2_myl0_81",
+    "_gemm_mha_v2_myl0_99",
+    "_gemm_mha_v2_myl0_117",
+    "_gemm_mha_v2_myl0_135",
+    "_gemm_mha_v2_myl0_153",
+    "_gemm_mha_v2_myl1_16",
+    "_gemm_mha_v2_myl1_44",
+    "_gemm_mha_v2_myl1_72"
+   ]
+  },
+  "chunk2.engine": {
+   "trt": "10.10.0",
+   "onnx": "../../onnx/fp8_sideout/chunk2/chunk.onnx",
+   "profiles": [
+    {
+     "h": [
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ]
+     ],
+     "cos": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ]
+    },
+    {
+     "h": [
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ]
+     ],
+     "cos": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ]
+    }
+   ],
+   "opt_level": 3,
+   "parse_s": 2.2591140270233154,
+   "build_s": 9.084601879119873,
+   "engine_bytes": 1742025564,
+   "n_layers": 433,
+   "device_memory_per_profile": [
+    449942016,
+    14310912
+   ],
+   "kernels_sample": [
+    "_gemm_mha_v2_myl0_9",
+    "_gemm_mha_v2_myl0_27",
+    "_gemm_mha_v2_myl0_45",
+    "_gemm_mha_v2_myl0_63",
+    "_gemm_mha_v2_myl0_81",
+    "_gemm_mha_v2_myl0_99",
+    "_gemm_mha_v2_myl0_117",
+    "_gemm_mha_v2_myl0_135",
+    "_gemm_mha_v2_myl0_153",
+    "_gemm_mha_v2_myl1_16",
+    "_gemm_mha_v2_myl1_44",
+    "_gemm_mha_v2_myl1_72"
+   ]
+  },
+  "chunk3.engine": {
+   "trt": "10.10.0",
+   "onnx": "../../onnx/fp8_sideout/chunk3/chunk.onnx",
+   "profiles": [
+    {
+     "h": [
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ],
+      [
+       1,
+       3088,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       16,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ],
+      [
+       3088,
+       3104
+      ]
+     ],
+     "cos": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ],
+      [
+       3088,
+       128
+      ]
+     ]
+    },
+    {
+     "h": [
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ],
+      [
+       1,
+       1,
+       4096
+      ]
+     ],
+     "past_kv": [
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ],
+      [
+       9,
+       2,
+       8,
+       3456,
+       128
+      ]
+     ],
+     "bias": [
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ],
+      [
+       1,
+       3457
+      ]
+     ],
+     "cos": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ],
+     "sin": [
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ],
+      [
+       1,
+       128
+      ]
+     ]
+    }
+   ],
+   "opt_level": 3,
+   "parse_s": 2.235675811767578,
+   "build_s": 9.035024404525757,
+   "engine_bytes": 1742025564,
+   "n_layers": 433,
+   "device_memory_per_profile": [
+    449942016,
+    14310912
+   ],
+   "kernels_sample": [
+    "_gemm_mha_v2_myl0_9",
+    "_gemm_mha_v2_myl0_27",
+    "_gemm_mha_v2_myl0_45",
+    "_gemm_mha_v2_myl0_63",
+    "_gemm_mha_v2_myl0_81",
+    "_gemm_mha_v2_myl0_99",
+    "_gemm_mha_v2_myl0_117",
+    "_gemm_mha_v2_myl0_135",
+    "_gemm_mha_v2_myl0_153",
+    "_gemm_mha_v2_myl1_16",
+    "_gemm_mha_v2_myl1_44",
+    "_gemm_mha_v2_myl1_72"
+   ]
+  }
+ },
+ "gpu_mem_allocated_gb": 14.84804352,
+ "rows": [
+  {
+   "clip": "context_000",
+   "rep": 0,
+   "host_ms": 1824.9422311782837,
+   "npz_load_ms": 341.11820068210363,
+   "vision_ms": 146.42156982421875,
+   "prefill_ms": 352.1993408203125,
+   "decode_plain_ms_per_token": 54.8393530480098,
+   "decode_graph_ms_per_token": 60.938573558814824,
+   "decode_graph_ms": 975.0171769410372,
+   "n_decode": 16,
+   "e10_ms": 195.5237139482051,
+   "e4_ms": 79.01278045028448,
+   "total_e10_ms": 3495.4577272292227,
+   "total_e4_ms": 3378.946793731302,
+   "text": "Keep distance to the lead vehicle since it is directly ahead in our lane<|cot_end|><|traj_future_start|> merges"
+  },
+  {
+   "clip": "context_000",
+   "rep": 1,
+   "host_ms": 59.813701082021,
+   "npz_load_ms": 348.41136261820793,
+   "vision_ms": 146.62899780273438,
+   "prefill_ms": 351.04010009765625,
+   "decode_plain_ms_per_token": 47.88879750412889,
+   "decode_graph_ms_per_token": 46.58388483221643,
+   "decode_graph_ms": 745.3421573154628,
+   "n_decode": 16,
+   "e10_ms": 195.39839797653258,
+   "e4_ms": 78.98590713739395,
+   "total_e10_ms": 1499.416583450511,
+   "total_e4_ms": 1383.0040926113725,
+   "text": "Keep distance to the lead vehicle since it is directly ahead in our lane<|cot_end|><|traj_future_start|> merges"
+  },
+  {
+   "clip": "context_001",
+   "rep": 0,
+   "host_ms": 33.65092817693949,
+   "npz_load_ms": 250.39729522541165,
+   "vision_ms": 146.40328979492188,
+   "prefill_ms": 351.5634460449219,
+   "decode_plain_ms_per_token": 47.9012455791235,
+   "decode_graph_ms_per_token": 46.6298027895391,
+   "decode_graph_ms": 699.4470418430865,
+   "n_decode": 15,
+   "e10_ms": 195.49013301730156,
+   "e4_ms": 79.02217749506235,
+   "total_e10_ms": 1427.7054560370743,
+   "total_e4_ms": 1311.2375005148351,
+   "text": "Adapt speed for the right curve since the lane bends right ahead<|cot_end|><|traj_future_start|> exiting"
+  },
+  {
+   "clip": "context_001",
+   "rep": 1,
+   "host_ms": 29.51197372749448,
+   "npz_load_ms": 247.9044389910996,
+   "vision_ms": 146.29244995117188,
+   "prefill_ms": 351.6365966796875,
+   "decode_plain_ms_per_token": 47.85966028769811,
+   "decode_graph_ms_per_token": 46.532205088684954,
+   "decode_graph_ms": 697.9830763302743,
+   "n_decode": 15,
+   "e10_ms": 195.36433345638216,
+   "e4_ms": 79.00070096366107,
+   "total_e10_ms": 1421.9266993459314,
+   "total_e4_ms": 1305.5630668532103,
+   "text": "Adapt speed for the right curve since the lane bends right ahead<|cot_end|><|traj_future_start|> exiting"
+  },
+  {
+   "clip": "context_002",
+   "rep": 0,
+   "host_ms": 26.75221674144268,
+   "npz_load_ms": 297.4562789313495,
+   "vision_ms": 146.24461364746094,
+   "prefill_ms": 351.8073425292969,
+   "decode_plain_ms_per_token": 47.88732825545594,
+   "decode_graph_ms_per_token": 46.52393382275477,
+   "decode_graph_ms": 744.3829411640763,
+   "n_decode": 16,
+   "e10_ms": 195.44434663839638,
+   "e4_ms": 79.01800097897649,
+   "total_e10_ms": 1465.9561996813864,
+   "total_e4_ms": 1349.5298540219665,
+   "text": "Keep distance to the lead vehicle since it is directly ahead in our lane<|cot_end|><|traj_future_start|> merges"
+  },
+  {
+   "clip": "context_002",
+   "rep": 1,
+   "host_ms": 27.369673363864422,
+   "npz_load_ms": 297.41382831707597,
+   "vision_ms": 146.54940795898438,
+   "prefill_ms": 351.9689636230469,
+   "decode_plain_ms_per_token": 47.896703938022256,
+   "decode_graph_ms_per_token": 46.533751126844436,
+   "decode_graph_ms": 744.540018029511,
+   "n_decode": 16,
+   "e10_ms": 195.29969547875226,
+   "e4_ms": 78.95153318531811,
+   "total_e10_ms": 1466.903775697574,
+   "total_e4_ms": 1350.5556134041399,
+   "text": "Keep distance to the lead vehicle since it is directly ahead in our lane<|cot_end|><|traj_future_start|> merges"
+  }
+ ]
+}

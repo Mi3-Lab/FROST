@@ -1,0 +1,310 @@
+{
+ "engine": "<FROST_THOR_ROOT>/trt/engines/fp8tv2_b1_L3200.engine",
+ "B": 1,
+ "L": 3200,
+ "P": 3102,
+ "clip": "context_000",
+ "trt": "10.10.0",
+ "build": {
+  "trt": "10.10.0",
+  "onnx": "<FROST_THOR_ROOT>/trt/onnx/onnx_fp8_tv2/field.onnx",
+  "batches": [
+   1
+  ],
+  "lmax": 3200,
+  "opt_level": 3,
+  "parse_s": 1.5228474140167236,
+  "build_s": 58.583393812179565,
+  "engine_bytes": 2289953700,
+  "n_layers": 587,
+  "device_memory_bytes": 15342080,
+  "io": [
+   [
+    "x",
+    "DataType.FLOAT",
+    [
+     1,
+     64,
+     2
+    ]
+   ],
+   [
+    "t",
+    "DataType.FLOAT",
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   [
+    "past_kv",
+    "DataType.BF16",
+    [
+     36,
+     2,
+     8,
+     3200,
+     128
+    ]
+   ],
+   [
+    "key_bias",
+    "DataType.FLOAT",
+    [
+     3200
+    ]
+   ],
+   [
+    "cos",
+    "DataType.FLOAT",
+    [
+     64,
+     128
+    ]
+   ],
+   [
+    "sin",
+    "DataType.FLOAT",
+    [
+     64,
+     128
+    ]
+   ],
+   [
+    "v",
+    "DataType.FLOAT",
+    [
+     1,
+     64,
+     2
+    ]
+   ]
+  ],
+  "mha_like_layers": [
+   "__myl_ConcCast_myl0_0",
+   "__myl_GathReshMulMulMulCosSinConcMul_myl0_1",
+   "__myl_MoveSlicSlicMulMulMulMulMulCosSinConcMulCosSinConcReplMulMulConcCast_myl0_2",
+   "/trunk_0/Gemm_myl0_3",
+   "__myl_SiluCastMulMeanAddSqrtDivMulCastMul_myl0_4",
+   "/trunk_3/Gemm_myl0_5",
+   "__myl_SiluCastMulMeanAddSqrtDivMulCastMul_myl0_6",
+   "/trunk_6/Gemm_myl0_7",
+   "__myl_CastMeanSubMulMeanAddSqrtDivMulMulAddMulMeanAddSqrtDivMulMulCastMulMinMaxCast_myl0_8",
+   "/v_proj/MatMul_myl0_9",
+   "/k_proj/MatMul_myl0_10",
+   "/q_proj/MatMul_myl0_11",
+   "__myl_CastMulMean_myl0_12",
+   "__myl_SlicReshSlicSlicTranConcAddSqrtDivMulCastMulTranSlicSlicNegConcCastMulCastMulAddCastConcEtc_myl0_13",
+   "__myl_CastMulMean_myl0_14",
+   "__myl_AddSqrtDivMulCastMulTranSlicSlicNegConcCastMulCastMulAddCastReshMove_myl0_15",
+   "_gemm_mha_v2_myl0_16",
+   "__myl_MoveReshTran_myl0_17",
+   "/o_proj/MatMul_myl0_18",
+   "__myl_ReshCastAddReshMulMeanAddSqrtDivMulMulCastMulMinMaxCast_myl0_19"
+  ]
+ },
+ "numerics": {
+  "action_space_check_max_abs_m": 0.0,
+  "v_b1_t0.0": {
+   "max_abs": 0.015625,
+   "rel_l2": 0.00442531006410718,
+   "ref_abs_max": 2.28125
+  },
+  "v_b1_t0.5": {
+   "max_abs": 0.0234375,
+   "rel_l2": 0.00533341895788908,
+   "ref_abs_max": 2.234375
+  },
+  "v_b1_t0.9": {
+   "max_abs": 0.03125,
+   "rel_l2": 0.006934150587767363,
+   "ref_abs_max": 4.03125
+  },
+  "euler1": {
+   "plan_max_abs_m": {
+    "max": 0.5363948345184326,
+    "median": 0.23382365703582764,
+    "per_seed": [
+     0.0642843246459961,
+     0.2211921215057373,
+     0.32971668243408203,
+     0.24481463432312012,
+     0.22283267974853516,
+     0.5363948345184326
+    ]
+   },
+   "action_max_abs": 0.015625
+  },
+  "euler2": {
+   "plan_max_abs_m": {
+    "max": 0.2740292549133301,
+    "median": 0.09715902805328369,
+    "per_seed": [
+     0.2740292549133301,
+     0.14835786819458008,
+     0.045960187911987305,
+     0.028129100799560547,
+     0.04261302947998047,
+     0.1746063232421875
+    ]
+   },
+   "action_max_abs": 0.0078125
+  },
+  "euler4": {
+   "plan_max_abs_m": {
+    "max": 0.13549792766571045,
+    "median": 0.05147659778594971,
+    "per_seed": [
+     0.03274047374725342,
+     0.13549792766571045,
+     0.03572970628738403,
+     0.039173126220703125,
+     0.06378006935119629,
+     0.06698322296142578
+    ]
+   },
+   "action_max_abs": 0.0078125
+  },
+  "euler6": {
+   "plan_max_abs_m": {
+    "max": 0.062180519104003906,
+    "median": 0.03681468963623047,
+    "per_seed": [
+     0.04707527160644531,
+     0.026554107666015625,
+     0.062180519104003906,
+     0.02527928352355957,
+     0.058290839195251465,
+     0.0174102783203125
+    ]
+   },
+   "action_max_abs": 0.008463472127914429
+  },
+  "euler10": {
+   "plan_max_abs_m": {
+    "max": 0.10535073280334473,
+    "median": 0.07355517148971558,
+    "per_seed": [
+     0.10351943969726562,
+     0.06351733207702637,
+     0.08359301090240479,
+     0.0135498046875,
+     0.010387808084487915,
+     0.10535073280334473
+    ]
+   },
+   "action_max_abs": 0.006249904632568359
+  },
+  "heun32": {
+   "plan_max_abs_m": {
+    "max": 0.07453775405883789,
+    "median": 0.02005767822265625,
+    "per_seed": [
+     0.0183258056640625,
+     0.07453775405883789,
+     0.01521366834640503,
+     0.04107952117919922,
+     0.015228271484375,
+     0.02178955078125
+    ]
+   },
+   "action_max_abs": 0.02728271484375
+  }
+ },
+ "latency": {
+  "call_plain": {
+   "median_ms": 19.476113142445683,
+   "p90_ms": 19.499725429341197,
+   "n": 200
+  },
+  "call_graph": {
+   "median_ms": 18.521032761782408,
+   "p90_ms": 18.639276828616858,
+   "n": 200
+  },
+  "plan_plain": {
+   "euler1": {
+    "median_ms": 20.850406726822257,
+    "p90_ms": 20.966522628441453,
+    "n": 30,
+    "nfe": 1
+   },
+   "euler2": {
+    "median_ms": 40.234043495729566,
+    "p90_ms": 40.298361983150244,
+    "n": 30,
+    "nfe": 2
+   },
+   "euler4": {
+    "median_ms": 79.01502191089094,
+    "p90_ms": 79.11293860524893,
+    "n": 30,
+    "nfe": 4
+   },
+   "euler6": {
+    "median_ms": 117.81388404779136,
+    "p90_ms": 117.93669257313013,
+    "n": 30,
+    "nfe": 6
+   },
+   "euler10": {
+    "median_ms": 195.46309346333146,
+    "p90_ms": 195.5436441116035,
+    "n": 30,
+    "nfe": 10
+   },
+   "heun32": {
+    "median_ms": 1241.8271370697767,
+    "p90_ms": 1242.0373785775155,
+    "n": 30,
+    "nfe": 64
+   }
+  },
+  "plan_graph": {
+   "euler1": {
+    "median_ms": 20.181882428005338,
+    "p90_ms": 20.260834274813533,
+    "n": 30,
+    "nfe": 1,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler2": {
+    "median_ms": 38.34645706228912,
+    "p90_ms": 38.434395333752036,
+    "n": 30,
+    "nfe": 2,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler4": {
+    "median_ms": 76.80428447201848,
+    "p90_ms": 76.86977847479284,
+    "n": 30,
+    "nfe": 4,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler6": {
+    "median_ms": 114.52844343148172,
+    "p90_ms": 114.65899930335581,
+    "n": 30,
+    "nfe": 6,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler10": {
+    "median_ms": 189.98068501241505,
+    "p90_ms": 190.08267736062407,
+    "n": 30,
+    "nfe": 10,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "heun32": {
+    "median_ms": 1208.502485183999,
+    "p90_ms": 1209.070805925876,
+    "n": 30,
+    "nfe": 64,
+    "graph_vs_plain_max_abs": 0.0
+   }
+  }
+ },
+ "peak_mem_gb": 0.929349632
+}

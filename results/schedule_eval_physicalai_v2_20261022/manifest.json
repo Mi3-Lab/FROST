@@ -1,0 +1,17 @@
+{
+  "scope": "Equal-NFE schedule comparison on frozen Alpamayo1.5 with calibration/evaluation clip split.\n\ncalibrate: on calibration clips, estimate (a) decision-information density from the\n  commitment probe (agreement of endpoint-prediction class with the final class),\n  (b) field-turn density 1-cos(v_i,v_i+1) from stored Euler10 velocities (ProbeFlow-like),\n  (c) rescaled entropic-time density, which in x_t=(1-t)z+t x1 reduces to the\n  flow-matching loss E|v(x_t,t)-(x1-z)|^2 with x1 = action of the logged human future.\nevaluate: on held-out clips, integrate Euler on each schedule's grid and compare decision\n  classes with the Heun160 reference (same noise) and with the human decision.\n",
+  "curves": "artifacts/schedule_curves_physicalai_v1_20261022.json",
+  "curves_sha256": "706efd1347cc6e1901e41b3f098b5d3aae3c15bbcb81ac59ff895d379c80cef0",
+  "evaluation": [
+    0,
+    436
+  ],
+  "seeds": [
+    9201,
+    9202,
+    9203,
+    9204
+  ],
+  "data": "artifacts/physicalai_test_contexts_v2_20261022",
+  "reference": "inline heun80"
+}

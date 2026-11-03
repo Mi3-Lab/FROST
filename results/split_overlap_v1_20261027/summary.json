@@ -1,0 +1,29 @@
+{
+  "split": "artifacts/physicalai_splits_20261027/splits/alpamayo_aligned.parquet",
+  "column": "split",
+  "samples": {
+    "main": {
+      "records": "artifacts/physicalai_test_contexts_v1_20261022/records.json",
+      "range": [
+        100,
+        160
+      ],
+      "clips": 60,
+      "partition": {
+        "train": 57,
+        "test": 3
+      }
+    },
+    "heldout_primary": {
+      "records": "artifacts/physicalai_heldout_contexts_v3_20261027/records.json",
+      "range": [
+        0,
+        120
+      ],
+      "clips": 120,
+      "partition": {
+        "test": 120
+      }
+    }
+  }
+}

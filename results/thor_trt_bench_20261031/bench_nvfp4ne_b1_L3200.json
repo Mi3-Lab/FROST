@@ -1,0 +1,310 @@
+{
+ "engine": "<FROST_THOR_ROOT>/trt/engines/nvfp4ne_b1_L3200.engine",
+ "B": 1,
+ "L": 3200,
+ "P": 3102,
+ "clip": "context_000",
+ "trt": "10.10.0",
+ "build": {
+  "trt": "10.10.0",
+  "onnx": "<FROST_THOR_ROOT>/trt/onnx/onnx_nvfp4ne_tv2/field.onnx",
+  "batches": [
+   1
+  ],
+  "lmax": 3200,
+  "opt_level": 3,
+  "parse_s": 1.432917594909668,
+  "build_s": 15.795664548873901,
+  "engine_bytes": 1658160580,
+  "n_layers": 831,
+  "device_memory_bytes": 15629312,
+  "io": [
+   [
+    "x",
+    "DataType.FLOAT",
+    [
+     1,
+     64,
+     2
+    ]
+   ],
+   [
+    "t",
+    "DataType.FLOAT",
+    [
+     1,
+     1,
+     1
+    ]
+   ],
+   [
+    "past_kv",
+    "DataType.BF16",
+    [
+     36,
+     2,
+     8,
+     3200,
+     128
+    ]
+   ],
+   [
+    "key_bias",
+    "DataType.FLOAT",
+    [
+     3200
+    ]
+   ],
+   [
+    "cos",
+    "DataType.FLOAT",
+    [
+     64,
+     128
+    ]
+   ],
+   [
+    "sin",
+    "DataType.FLOAT",
+    [
+     64,
+     128
+    ]
+   ],
+   [
+    "v",
+    "DataType.FLOAT",
+    [
+     1,
+     64,
+     2
+    ]
+   ]
+  ],
+  "mha_like_layers": [
+   "__myl_ConcCast_myl0_0",
+   "__myl_GathReshMulMulMulCosSinConcMul_myl0_1",
+   "__myl_MoveSlicSlicMulMulMulMulMulCosSinConcMulCosSinConcReplMulMulConcCast_myl0_2",
+   "/trunk_0/Gemm_myl0_3",
+   "__myl_SiluCastMulMeanAddSqrtDivMulCastMul_myl0_4",
+   "/trunk_3/Gemm_myl0_5",
+   "__myl_SiluCastMulMeanAddSqrtDivMulCastMul_myl0_6",
+   "/trunk_6/Gemm_myl0_7",
+   "__myl_CastMeanSubMulMeanAddSqrtDivMulMulAddMulMeanAddSqrtDivMulMulCast_myl0_8",
+   "/v_proj/MatMul+/k_proj/MatMul+/q_proj/MatMul_myl0_9",
+   "__myl_ReshCastMulMean_myl0_10",
+   "__myl_SlicReshSlicSlicReshTranConcAddSqrtDivMulCastMulTranSlicSlicNegConcCastMulCastMulAddCastEtc_myl0_11",
+   "__myl_ReshCastMulMean_myl0_12",
+   "__myl_AddSqrtDivMulCastMulTranSlicSlicNegConcCastMulCastMulAddCastReshMove_myl0_13",
+   "_gemm_mha_v2_myl0_14",
+   "__myl_MoveReshTran_myl0_15",
+   "/o_proj/MatMul_myl0_16",
+   "__myl_ReshCastAddReshMulMeanAddSqrtDivMulMulCast_myl0_17",
+   "/up_proj/MatMul+/gate_proj/MatMul_myl0_18",
+   "__myl_SiluMul_myl0_19"
+  ]
+ },
+ "numerics": {
+  "action_space_check_max_abs_m": 0.0,
+  "v_b1_t0.0": {
+   "max_abs": 0.03125,
+   "rel_l2": 0.008683099411427975,
+   "ref_abs_max": 2.28125
+  },
+  "v_b1_t0.5": {
+   "max_abs": 0.0234375,
+   "rel_l2": 0.007935472764074802,
+   "ref_abs_max": 2.234375
+  },
+  "v_b1_t0.9": {
+   "max_abs": 0.109375,
+   "rel_l2": 0.01730632223188877,
+   "ref_abs_max": 4.03125
+  },
+  "euler1": {
+   "plan_max_abs_m": {
+    "max": 1.2247713804244995,
+    "median": 0.2569221258163452,
+    "per_seed": [
+     0.20975518226623535,
+     0.3040890693664551,
+     0.15726101398468018,
+     1.2247713804244995,
+     0.433927059173584,
+     0.06149458885192871
+    ]
+   },
+   "action_max_abs": 0.03125
+  },
+  "euler2": {
+   "plan_max_abs_m": {
+    "max": 0.4890613555908203,
+    "median": 0.18440890312194824,
+    "per_seed": [
+     0.24844646453857422,
+     0.12037134170532227,
+     0.31608033180236816,
+     0.06641244888305664,
+     0.4890613555908203,
+     0.11253738403320312
+    ]
+   },
+   "action_max_abs": 0.015625
+  },
+  "euler4": {
+   "plan_max_abs_m": {
+    "max": 0.29733777046203613,
+    "median": 0.08017361164093018,
+    "per_seed": [
+     0.08241415023803711,
+     0.16160118579864502,
+     0.29733777046203613,
+     0.03865981101989746,
+     0.026031494140625,
+     0.07793307304382324
+    ]
+   },
+   "action_max_abs": 0.01953125
+  },
+  "euler6": {
+   "plan_max_abs_m": {
+    "max": 0.20877480506896973,
+    "median": 0.10027295351028442,
+    "per_seed": [
+     0.04562211036682129,
+     0.060497403144836426,
+     0.14004850387573242,
+     0.14349806308746338,
+     0.046087563037872314,
+     0.20877480506896973
+    ]
+   },
+   "action_max_abs": 0.023437172174453735
+  },
+  "euler10": {
+   "plan_max_abs_m": {
+    "max": 0.1456446647644043,
+    "median": 0.06546729803085327,
+    "per_seed": [
+     0.04875826835632324,
+     0.0400843620300293,
+     0.1456446647644043,
+     0.05986189842224121,
+     0.07107269763946533,
+     0.12226462364196777
+    ]
+   },
+   "action_max_abs": 0.020312607288360596
+  },
+  "heun32": {
+   "plan_max_abs_m": {
+    "max": 0.16719532012939453,
+    "median": 0.048857927322387695,
+    "per_seed": [
+     0.04383134841918945,
+     0.05388450622558594,
+     0.06582427024841309,
+     0.0127716064453125,
+     0.16719532012939453,
+     0.03337669372558594
+    ]
+   },
+   "action_max_abs": 0.04022216796875
+  }
+ },
+ "latency": {
+  "call_plain": {
+   "median_ms": 17.857688013464212,
+   "p90_ms": 17.883250629529357,
+   "n": 200
+  },
+  "call_graph": {
+   "median_ms": 16.652276972308755,
+   "p90_ms": 16.661757556721568,
+   "n": 200
+  },
+  "plan_plain": {
+   "euler1": {
+    "median_ms": 19.241415662690997,
+    "p90_ms": 19.3152810446918,
+    "n": 30,
+    "nfe": 1
+   },
+   "euler2": {
+    "median_ms": 36.977565847337246,
+    "p90_ms": 37.08871663548052,
+    "n": 30,
+    "nfe": 2
+   },
+   "euler4": {
+    "median_ms": 72.52093311399221,
+    "p90_ms": 72.5734184961766,
+    "n": 30,
+    "nfe": 4
+   },
+   "euler6": {
+    "median_ms": 108.08143485337496,
+    "p90_ms": 108.1713022198528,
+    "n": 30,
+    "nfe": 6
+   },
+   "euler10": {
+    "median_ms": 179.1966948658228,
+    "p90_ms": 179.36412473209202,
+    "n": 30,
+    "nfe": 10
+   },
+   "heun32": {
+    "median_ms": 1138.975421898067,
+    "p90_ms": 1139.3121674191207,
+    "n": 30,
+    "nfe": 64
+   }
+  },
+  "plan_graph": {
+   "euler1": {
+    "median_ms": 18.449126044288278,
+    "p90_ms": 18.49280260503292,
+    "n": 30,
+    "nfe": 1,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler2": {
+    "median_ms": 35.598349291831255,
+    "p90_ms": 35.66170078702271,
+    "n": 30,
+    "nfe": 2,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler4": {
+    "median_ms": 69.89590567536652,
+    "p90_ms": 69.97569589875638,
+    "n": 30,
+    "nfe": 4,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler6": {
+    "median_ms": 104.22577289864421,
+    "p90_ms": 104.28837710060179,
+    "n": 30,
+    "nfe": 6,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "euler10": {
+    "median_ms": 172.7422142866999,
+    "p90_ms": 172.96646335162222,
+    "n": 30,
+    "nfe": 10,
+    "graph_vs_plain_max_abs": 0.0
+   },
+   "heun32": {
+    "median_ms": 1066.5288204327226,
+    "p90_ms": 1098.2641095295548,
+    "n": 30,
+    "nfe": 64,
+    "graph_vs_plain_max_abs": 0.0
+   }
+  }
+ },
+ "peak_mem_gb": 0.929349632
+}

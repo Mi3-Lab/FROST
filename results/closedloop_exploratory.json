@@ -1,0 +1,37 @@
+{
+ "source": "frost.analysis.closedloop_analysis.scene_table on artifacts/alpasim/closedloop_v1; exact binomial McNemar as in closedloop_analysis.main",
+ "common_scenes": 58,
+ "stored_tests_reproduced": 15,
+ "exploratory": [
+  {
+   "a": "heun32_t0.84",
+   "b": "heun32_t1.0",
+   "metric": "incident",
+   "only_a": 3,
+   "only_b": 2,
+   "rate_a": 0.3620689655172414,
+   "rate_b": 0.3448275862068966,
+   "p_exact_mcnemar": 1.0
+  },
+  {
+   "a": "heun32_t0.84",
+   "b": "heun32_t1.0",
+   "metric": "collision_at_fault",
+   "only_a": 3,
+   "only_b": 0,
+   "rate_a": 0.1206896551724138,
+   "rate_b": 0.06896551724137931,
+   "p_exact_mcnemar": 0.25
+  },
+  {
+   "a": "heun32_t0.84",
+   "b": "heun32_t1.0",
+   "metric": "offroad",
+   "only_a": 1,
+   "only_b": 4,
+   "rate_a": 0.25862068965517243,
+   "rate_b": 0.3103448275862069,
+   "p_exact_mcnemar": 0.375
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "Replicate the numerical-temperature probe on other frozen flow driving policies.\n\nOur integrators run inside each model's own diffusion.sample call, using the\nstep_fn (and classifier-free guidance, if the model enables it) that the model\npasses there. Plan keys and config names match temperature_probe, so\ntemperature_report can summarize any model.\n",
+  "model": "r1",
+  "data": "artifacts/physicalai_heldout_contexts_v3_20261027",
+  "range": [
+    0,
+    400
+  ],
+  "seeds": [
+    9201,
+    9202,
+    9203,
+    9204,
+    9205,
+    9206
+  ],
+  "configs": [
+    [
+      "euler",
+      1,
+      1.0
+    ],
+    [
+      "euler",
+      2,
+      1.0
+    ],
+    [
+      "euler",
+      4,
+      1.0
+    ],
+    [
+      "euler",
+      6,
+      1.0
+    ],
+    [
+      "euler",
+      10,
+      1.0
+    ],
+    [
+      "heun",
+      32,
+      1.0
+    ],
+    [
+      "heun",
+      32,
+      0.9
+    ],
+    [
+      "heun",
+      32,
+      0.8
+    ],
+    [
+      "heun",
+      32,
+      0.7
+    ],
+    [
+      "heun",
+      32,
+      0.6
+    ],
+    [
+      "heun",
+      32,
+      0.5
+    ],
+    [
+      "heun",
+      32,
+      0.4
+    ]
+  ],
+  "source_sha256": "0a68c7a574e4a7c43c948261e276ce8c01e4ea4d84332a8db03dbeefdb9ac1a0",
+  "limitations": [
+    "Language branch sampled once per clip (seed 123)",
+    "Alpamayo2 uses its own 7-camera release input profile streamed from HF",
+    "R1 fed the same 4-camera x 4-frame cache as Alpamayo1.5"
+  ],
+  "shards": {
+    "main": "artifacts/temperature_probe_r1_heldout_pooled400_v3_20261028",
+    "artifacts/temperature_probe_r1_heldout_ext_v3_20261027": [
+      120,
+      400
+    ]
+  },
+  "allowed_source_sha256": [
+    "6886a79b97d9e2b44c57e5ba7c3d3f940d5c6536093b717adc36bc2537ee6a96"
+  ]
+}

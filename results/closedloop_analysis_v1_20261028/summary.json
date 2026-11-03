@@ -1,0 +1,269 @@
+{
+  "configs": {
+    "euler10_t1.0": 58,
+    "euler4_t1.0": 58,
+    "heun32_t0.65": 58,
+    "heun32_t0.84": 58,
+    "heun32_t1.0": 58
+  },
+  "common_scenes": 58,
+  "rates": {
+    "euler10_t1.0": {
+      "collision_at_fault": 0.10344827586206896,
+      "offroad": 0.3103448275862069,
+      "incident": 0.3620689655172414,
+      "dist_traveled_m": 231.76341270820433
+    },
+    "euler4_t1.0": {
+      "collision_at_fault": 0.06896551724137931,
+      "offroad": 0.27586206896551724,
+      "incident": 0.3103448275862069,
+      "dist_traveled_m": 239.68017679940738
+    },
+    "heun32_t0.65": {
+      "collision_at_fault": 0.05172413793103448,
+      "offroad": 0.2413793103448276,
+      "incident": 0.29310344827586204,
+      "dist_traveled_m": 233.48204640089673
+    },
+    "heun32_t0.84": {
+      "collision_at_fault": 0.1206896551724138,
+      "offroad": 0.25862068965517243,
+      "incident": 0.3620689655172414,
+      "dist_traveled_m": 234.47788811256942
+    },
+    "heun32_t1.0": {
+      "collision_at_fault": 0.06896551724137931,
+      "offroad": 0.3103448275862069,
+      "incident": 0.3448275862068966,
+      "dist_traveled_m": 233.0480659827023
+    }
+  },
+  "tests": [
+    {
+      "label": "C1",
+      "a": "heun32_t0.65",
+      "b": "heun32_t1.0",
+      "metric": "incident",
+      "rate_a": 0.29310344827586204,
+      "rate_b": 0.3448275862068966,
+      "only_a": 2,
+      "only_b": 5,
+      "p_exact_mcnemar": 0.453125,
+      "diff_ci95": [
+        -0.1383620689655171,
+        0.034482758620689655
+      ]
+    },
+    {
+      "label": "C1",
+      "a": "heun32_t0.65",
+      "b": "heun32_t1.0",
+      "metric": "collision_at_fault",
+      "rate_a": 0.05172413793103448,
+      "rate_b": 0.06896551724137931,
+      "only_a": 1,
+      "only_b": 2,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.08620689655172414,
+        0.034482758620689655
+      ]
+    },
+    {
+      "label": "C1",
+      "a": "heun32_t0.65",
+      "b": "heun32_t1.0",
+      "metric": "offroad",
+      "rate_a": 0.2413793103448276,
+      "rate_b": 0.3103448275862069,
+      "only_a": 2,
+      "only_b": 6,
+      "p_exact_mcnemar": 0.2890625,
+      "diff_ci95": [
+        -0.1724137931034483,
+        0.017241379310344827
+      ]
+    },
+    {
+      "label": "C2 matched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t0.65",
+      "metric": "incident",
+      "rate_a": 0.3103448275862069,
+      "rate_b": 0.29310344827586204,
+      "only_a": 3,
+      "only_b": 2,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.05172413793103448,
+        0.08620689655172414
+      ]
+    },
+    {
+      "label": "C2 matched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t0.65",
+      "metric": "collision_at_fault",
+      "rate_a": 0.06896551724137931,
+      "rate_b": 0.05172413793103448,
+      "only_a": 3,
+      "only_b": 2,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.05215517241379296,
+        0.08620689655172414
+      ]
+    },
+    {
+      "label": "C2 matched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t0.65",
+      "metric": "offroad",
+      "rate_a": 0.27586206896551724,
+      "rate_b": 0.2413793103448276,
+      "only_a": 3,
+      "only_b": 1,
+      "p_exact_mcnemar": 0.625,
+      "diff_ci95": [
+        -0.034482758620689655,
+        0.10344827586206896
+      ]
+    },
+    {
+      "label": "C2 unmatched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "incident",
+      "rate_a": 0.3103448275862069,
+      "rate_b": 0.3448275862068966,
+      "only_a": 4,
+      "only_b": 6,
+      "p_exact_mcnemar": 0.75390625,
+      "diff_ci95": [
+        -0.13793103448275862,
+        0.06896551724137931
+      ]
+    },
+    {
+      "label": "C2 unmatched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "collision_at_fault",
+      "rate_a": 0.06896551724137931,
+      "rate_b": 0.06896551724137931,
+      "only_a": 3,
+      "only_b": 3,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.08620689655172414,
+        0.08620689655172414
+      ]
+    },
+    {
+      "label": "C2 unmatched",
+      "a": "euler4_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "offroad",
+      "rate_a": 0.27586206896551724,
+      "rate_b": 0.3103448275862069,
+      "only_a": 4,
+      "only_b": 6,
+      "p_exact_mcnemar": 0.75390625,
+      "diff_ci95": [
+        -0.13793103448275862,
+        0.06896551724137931
+      ]
+    },
+    {
+      "label": "C3 matched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t0.84",
+      "metric": "incident",
+      "rate_a": 0.3620689655172414,
+      "rate_b": 0.3620689655172414,
+      "only_a": 4,
+      "only_b": 4,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.10344827586206896,
+        0.08620689655172414
+      ]
+    },
+    {
+      "label": "C3 matched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t0.84",
+      "metric": "collision_at_fault",
+      "rate_a": 0.10344827586206896,
+      "rate_b": 0.1206896551724138,
+      "only_a": 2,
+      "only_b": 3,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.08620689655172414,
+        0.05172413793103448
+      ]
+    },
+    {
+      "label": "C3 matched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t0.84",
+      "metric": "offroad",
+      "rate_a": 0.3103448275862069,
+      "rate_b": 0.25862068965517243,
+      "only_a": 5,
+      "only_b": 2,
+      "p_exact_mcnemar": 0.453125,
+      "diff_ci95": [
+        -0.034482758620689655,
+        0.13793103448275862
+      ]
+    },
+    {
+      "label": "C3 unmatched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "incident",
+      "rate_a": 0.3620689655172414,
+      "rate_b": 0.3448275862068966,
+      "only_a": 3,
+      "only_b": 2,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.05172413793103448,
+        0.10344827586206896
+      ]
+    },
+    {
+      "label": "C3 unmatched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "collision_at_fault",
+      "rate_a": 0.10344827586206896,
+      "rate_b": 0.06896551724137931,
+      "only_a": 3,
+      "only_b": 1,
+      "p_exact_mcnemar": 0.625,
+      "diff_ci95": [
+        -0.034482758620689655,
+        0.10344827586206896
+      ]
+    },
+    {
+      "label": "C3 unmatched",
+      "a": "euler10_t1.0",
+      "b": "heun32_t1.0",
+      "metric": "offroad",
+      "rate_a": 0.3103448275862069,
+      "rate_b": 0.3103448275862069,
+      "only_a": 3,
+      "only_b": 3,
+      "p_exact_mcnemar": 1.0,
+      "diff_ci95": [
+        -0.08620689655172414,
+        0.08620689655172414
+      ]
+    }
+  ]
+}

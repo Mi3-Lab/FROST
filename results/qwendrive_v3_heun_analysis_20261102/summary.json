@@ -1,0 +1,1031 @@
+{
+  "protocol": "protocols/qwen_drive.md, addendum 1",
+  "clips": 400,
+  "distinct_clip_ids": 400,
+  "excluded": {
+    "native_5s": [],
+    "common_4s": []
+  },
+  "seeds": [
+    9201,
+    9202,
+    9203,
+    9204,
+    9205,
+    9206
+  ],
+  "boot": 2000,
+  "seed": 20261102,
+  "margins": {
+    "ade1": 0.05,
+    "flip": 0.02,
+    "flip_long": 0.02,
+    "flip_lat": 0.02
+  },
+  "R2": {
+    "reasoning_identical": 400,
+    "clips": 400,
+    "reasoning_frac": 1.0,
+    "euler10_t1.0": {
+      "pairs": 2400,
+      "median_m": 0.0,
+      "p99_m": 0.0,
+      "max_m": 0.0,
+      "class_agreement": 1.0,
+      "pass": true
+    },
+    "heun32_t1.0": {
+      "pairs": 2400,
+      "median_m": 0.0,
+      "p99_m": 0.0,
+      "max_m": 0.0,
+      "class_agreement": 1.0,
+      "pass": true
+    },
+    "pass": true,
+    "missing_in_heun_run": []
+  },
+  "flip_reference": "stored v3 heun32_t1.0",
+  "horizons": {
+    "native_5s": {
+      "samplers": {
+        "heun3_t1.0": {
+          "tau_eff": 1.0,
+          "tau_eff_ci95": [
+            1.0,
+            1.0
+          ],
+          "tau_eff_ci90": [
+            1.0,
+            1.0
+          ],
+          "in_range": false,
+          "below_grid": false,
+          "above_grid": true,
+          "boot_in_range": 0.0,
+          "spread": 0.16295361589465757,
+          "interpretable": false,
+          "ade1": {
+            "reference": 1.172675924527543,
+            "sampler": 1.173640939421483,
+            "matched": 1.172675924527543,
+            "effect": 0.0009650148939399639,
+            "residual": 0.0009650148939399639,
+            "residual_ci95": [
+              -0.00038739222457526146,
+              0.002407221131875014
+            ],
+            "residual_ci90": [
+              -0.00017109364625809143,
+              0.0021977779561070054
+            ],
+            "effect_ci95": [
+              -0.00038739222457526146,
+              0.002407221131875014
+            ],
+            "equivalent": false,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 1.0504242935756303,
+            "sampler": 1.0417741022888864,
+            "matched": 1.0504242935756303,
+            "effect": -0.008650191286743825,
+            "residual": -0.008650191286743825,
+            "residual_ci95": [
+              -0.010509454521257811,
+              -0.007003744908732945
+            ],
+            "residual_ci90": [
+              -0.010207086901307815,
+              -0.007234991216859332
+            ],
+            "effect_ci95": [
+              -0.010509454521257811,
+              -0.007003744908732945
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.003333333333333333,
+            "matched": 0.0,
+            "effect": 0.003333333333333333,
+            "residual": 0.003333333333333333,
+            "residual_ci95": [
+              0.00125,
+              0.005833333333333333
+            ],
+            "residual_ci90": [
+              0.0016666666666666666,
+              0.005416666666666666
+            ],
+            "effect_ci95": [
+              0.00125,
+              0.005833333333333333
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 8,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.00125,
+            "matched": 0.0,
+            "effect": 0.00125,
+            "residual": 0.00125,
+            "residual_ci95": [
+              0.0,
+              0.0029166666666666664
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0025
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0029166666666666664
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 3,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.0020833333333333333,
+            "matched": 0.0,
+            "effect": 0.0020833333333333333,
+            "residual": 0.0020833333333333333,
+            "residual_ci95": [
+              0.00041666666666666664,
+              0.004166666666666667
+            ],
+            "residual_ci90": [
+              0.0008333333333333333,
+              0.00375
+            ],
+            "effect_ci95": [
+              0.00041666666666666664,
+              0.004166666666666667
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 5,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "ci90": [
+              0.0,
+              0.0
+            ],
+            "equivalent": false
+          }
+        },
+        "heun5_t1.0": {
+          "tau_eff": 1.0,
+          "tau_eff_ci95": [
+            1.0,
+            1.0
+          ],
+          "tau_eff_ci90": [
+            1.0,
+            1.0
+          ],
+          "in_range": false,
+          "below_grid": false,
+          "above_grid": true,
+          "boot_in_range": 0.0,
+          "spread": 0.15604888780566398,
+          "interpretable": false,
+          "ade1": {
+            "reference": 1.172675924527543,
+            "sampler": 1.172999737521705,
+            "matched": 1.172675924527543,
+            "effect": 0.00032381299416184284,
+            "residual": 0.00032381299416184284,
+            "residual_ci95": [
+              -0.00019834987991736996,
+              0.000881832794756021
+            ],
+            "residual_ci90": [
+              -0.00012080938173735234,
+              0.0007757213606929047
+            ],
+            "effect_ci95": [
+              -0.00019834987991736996,
+              0.000881832794756021
+            ],
+            "equivalent": false,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 1.0504242935756303,
+            "sampler": 1.04675954138968,
+            "matched": 1.0504242935756303,
+            "effect": -0.003664752185950304,
+            "residual": -0.003664752185950304,
+            "residual_ci95": [
+              -0.004534039631667058,
+              -0.0029456968766805596
+            ],
+            "residual_ci90": [
+              -0.004383719967266231,
+              -0.003043694105512862
+            ],
+            "effect_ci95": [
+              -0.004534039631667058,
+              -0.0029456968766805596
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.0016666666666666666,
+            "matched": 0.0,
+            "effect": 0.0016666666666666666,
+            "residual": 0.0016666666666666666,
+            "residual_ci95": [
+              0.0,
+              0.003333333333333333
+            ],
+            "residual_ci90": [
+              0.00041666666666666664,
+              0.003333333333333333
+            ],
+            "effect_ci95": [
+              0.0,
+              0.003333333333333333
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 4,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.00041666666666666664,
+            "matched": 0.0,
+            "effect": 0.00041666666666666664,
+            "residual": 0.00041666666666666664,
+            "residual_ci95": [
+              0.0,
+              0.00125
+            ],
+            "residual_ci90": [
+              0.0,
+              0.00125
+            ],
+            "effect_ci95": [
+              0.0,
+              0.00125
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 1,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.00125,
+            "matched": 0.0,
+            "effect": 0.00125,
+            "residual": 0.00125,
+            "residual_ci95": [
+              0.0,
+              0.0029166666666666664
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0025
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0029166666666666664
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 3,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "ci90": [
+              0.0,
+              0.0
+            ],
+            "equivalent": false
+          }
+        },
+        "euler10_t1.0": {
+          "tau_eff": 0.9810838716631999,
+          "tau_eff_ci95": [
+            0.9788378629955774,
+            0.9828913267132577
+          ],
+          "tau_eff_ci90": [
+            0.9791711567386882,
+            0.9826465265304469
+          ],
+          "in_range": true,
+          "below_grid": false,
+          "above_grid": false,
+          "boot_in_range": 1.0,
+          "spread": 0.14863904943631495,
+          "interpretable": true,
+          "ade1": {
+            "reference": 1.172675924527543,
+            "sampler": 1.1724703723841403,
+            "matched": 1.172473908615089,
+            "effect": -0.00020555214340278738,
+            "residual": -3.5362309487307897e-06,
+            "residual_ci95": [
+              -0.00029715753774967046,
+              0.0002862844494713357
+            ],
+            "residual_ci90": [
+              -0.0002486219487621066,
+              0.0002443390990949589
+            ],
+            "effect_ci95": [
+              -0.0005334011745104228,
+              0.00011142318403549169
+            ],
+            "equivalent": true,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 1.0504242935756303,
+            "sampler": 1.0524585459783768,
+            "matched": 1.0523168752992338,
+            "effect": 0.0020342524027465725,
+            "residual": 0.00014167067914305775,
+            "residual_ci95": [
+              -0.00019214594159080444,
+              0.00048570008057215386
+            ],
+            "residual_ci90": [
+              -0.0001339201792578737,
+              0.00043215495493986733
+            ],
+            "effect_ci95": [
+              0.0016218193833967775,
+              0.002513363398729046
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.0008333333333333333,
+            "matched": 0.0005517204098233375,
+            "effect": 0.0008333333333333333,
+            "residual": 0.0002816129235099958,
+            "residual_ci95": [
+              -0.0006369363083678534,
+              0.0015128712631028985
+            ],
+            "residual_ci90": [
+              -0.0005491548317229491,
+              0.0012839134054060083
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 2,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 7,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.00041666666666666664,
+            "matched": 0.0004729032084200037,
+            "effect": 0.00041666666666666664,
+            "residual": -5.623654175333705e-05,
+            "residual_ci95": [
+              -0.0007419646160899695,
+              0.0010118592560320408
+            ],
+            "residual_ci90": [
+              -0.0006762350458199187,
+              0.0008052071316243761
+            ],
+            "effect_ci95": [
+              0.0,
+              0.00125
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 1,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 6,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.00041666666666666664,
+            "matched": 7.881720140333397e-05,
+            "effect": 0.00041666666666666664,
+            "residual": 0.00033784946526333267,
+            "residual_ci95": [
+              0.0,
+              0.0010270330881139796
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0010116725594425877
+            ],
+            "effect_ci95": [
+              0.0,
+              0.00125
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 1,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 1,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": -0.0002020159124540566,
+            "ci95": [
+              -0.0003913239152216863,
+              -6.072190784343626e-05
+            ],
+            "ci90": [
+              -0.00035446775132377264,
+              -7.830901755960797e-05
+            ],
+            "equivalent": true
+          }
+        }
+      },
+      "paired": {
+        "heun5_t1.0_minus_euler10_t1.0_flip": {
+          "point": 0.0013850537431566708,
+          "ci95": [
+            -0.0005332882271665394,
+            0.0035285557726328493
+          ],
+          "ci90": [
+            -0.0002830044470152525,
+            0.0031497270080899043
+          ]
+        },
+        "heun5_t1.0_minus_euler10_t1.0_ade1": {
+          "point": 0.00032734922511057363,
+          "ci95": [
+            -0.0004733097664320507,
+            0.0011345325996621077
+          ],
+          "ci90": [
+            -0.0003342120942660176,
+            0.000999122415543774
+          ]
+        },
+        "heun3_t1.0_minus_heun5_t1.0_flip": {
+          "point": 0.0016666666666666666,
+          "ci95": [
+            0.0004166666666666663,
+            0.0033333333333333335
+          ],
+          "ci90": [
+            0.00041666666666666675,
+            0.0033333333333333327
+          ]
+        },
+        "heun3_t1.0_minus_heun5_t1.0_ade1": {
+          "point": 0.000641201899778121,
+          "ci95": [
+            -0.00021429930834375167,
+            0.0015371274828620436
+          ],
+          "ci90": [
+            -6.4319507984123e-05,
+            0.001398179360875118
+          ]
+        }
+      }
+    },
+    "common_4s": {
+      "samplers": {
+        "heun3_t1.0": {
+          "tau_eff": 1.0,
+          "tau_eff_ci95": [
+            1.0,
+            1.0
+          ],
+          "tau_eff_ci90": [
+            1.0,
+            1.0
+          ],
+          "in_range": false,
+          "below_grid": false,
+          "above_grid": true,
+          "boot_in_range": 0.0,
+          "spread": 0.10431860285490985,
+          "interpretable": false,
+          "ade1": {
+            "reference": 0.7549849332358982,
+            "sampler": 0.7556301391033828,
+            "matched": 0.7549849332358982,
+            "effect": 0.0006452058674846217,
+            "residual": 0.0006452058674846217,
+            "residual_ci95": [
+              -0.0002252261279803075,
+              0.0015865642209150202
+            ],
+            "residual_ci90": [
+              -6.76996588598655e-05,
+              0.0014092431466161126
+            ],
+            "effect_ci95": [
+              -0.0002252261279803075,
+              0.0015865642209150202
+            ],
+            "equivalent": false,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 0.6792586350727752,
+            "sampler": 0.6741141711734336,
+            "matched": 0.6792586350727752,
+            "effect": -0.005144463899341534,
+            "residual": -0.005144463899341534,
+            "residual_ci95": [
+              -0.0061049399155379104,
+              -0.004258548804369725
+            ],
+            "residual_ci90": [
+              -0.005943136842940849,
+              -0.00437669556206467
+            ],
+            "effect_ci95": [
+              -0.0061049399155379104,
+              -0.004258548804369725
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.0025,
+            "matched": 0.0,
+            "effect": 0.0025,
+            "residual": 0.0025,
+            "residual_ci95": [
+              0.00041666666666666664,
+              0.005
+            ],
+            "residual_ci90": [
+              0.0008333333333333333,
+              0.004583333333333333
+            ],
+            "effect_ci95": [
+              0.00041666666666666664,
+              0.005
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 5,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.0008333333333333333,
+            "matched": 0.0,
+            "effect": 0.0008333333333333333,
+            "residual": 0.0008333333333333333,
+            "residual_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 2,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.0016666666666666666,
+            "matched": 0.0,
+            "effect": 0.0016666666666666666,
+            "residual": 0.0016666666666666666,
+            "residual_ci95": [
+              0.0,
+              0.00375
+            ],
+            "residual_ci90": [
+              0.00041666666666666664,
+              0.003333333333333333
+            ],
+            "effect_ci95": [
+              0.0,
+              0.00375
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 3,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "ci90": [
+              0.0,
+              0.0
+            ],
+            "equivalent": false
+          }
+        },
+        "heun5_t1.0": {
+          "tau_eff": 1.0,
+          "tau_eff_ci95": [
+            1.0,
+            1.0
+          ],
+          "tau_eff_ci90": [
+            1.0,
+            1.0
+          ],
+          "in_range": false,
+          "below_grid": false,
+          "above_grid": true,
+          "boot_in_range": 0.0,
+          "spread": 0.1000694226732594,
+          "interpretable": false,
+          "ade1": {
+            "reference": 0.7549849332358982,
+            "sampler": 0.7552089852227527,
+            "matched": 0.7549849332358982,
+            "effect": 0.0002240519868544899,
+            "residual": 0.0002240519868544899,
+            "residual_ci95": [
+              -0.00010635885552449375,
+              0.0005844392445357726
+            ],
+            "residual_ci90": [
+              -4.9325798520105656e-05,
+              0.0005207639978221378
+            ],
+            "effect_ci95": [
+              -0.00010635885552449375,
+              0.0005844392445357726
+            ],
+            "equivalent": false,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 0.6792586350727752,
+            "sampler": 0.677095931105926,
+            "matched": 0.6792586350727752,
+            "effect": -0.0021627039668491443,
+            "residual": -0.0021627039668491443,
+            "residual_ci95": [
+              -0.0025772063191817464,
+              -0.0017924635334533817
+            ],
+            "residual_ci90": [
+              -0.0025050466718788632,
+              -0.0018409574215648096
+            ],
+            "effect_ci95": [
+              -0.0025772063191817464,
+              -0.0017924635334533817
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.0008333333333333333,
+            "matched": 0.0,
+            "effect": 0.0008333333333333333,
+            "residual": 0.0008333333333333333,
+            "residual_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 2,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.0,
+            "matched": 0.0,
+            "effect": 0.0,
+            "residual": 0.0,
+            "residual_ci95": [
+              0.0,
+              0.0
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 0,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.0008333333333333333,
+            "matched": 0.0,
+            "effect": 0.0008333333333333333,
+            "residual": 0.0008333333333333333,
+            "residual_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "equivalent": false,
+            "clips_with_flip_sampler": 2,
+            "clips_with_flip_curve_bracket": {
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "ci90": [
+              0.0,
+              0.0
+            ],
+            "equivalent": false
+          }
+        },
+        "euler10_t1.0": {
+          "tau_eff": 0.9817942151198089,
+          "tau_eff_ci95": [
+            0.9797280102399624,
+            0.9834324674025214
+          ],
+          "tau_eff_ci90": [
+            0.9800412368142588,
+            0.9832011961346179
+          ],
+          "in_range": true,
+          "below_grid": false,
+          "above_grid": false,
+          "boot_in_range": 1.0,
+          "spread": 0.09553057362267282,
+          "interpretable": true,
+          "ade1": {
+            "reference": 0.7549849332358982,
+            "sampler": 0.7548472838014902,
+            "matched": 0.7548523758047938,
+            "effect": -0.0001376494344079715,
+            "residual": -5.092003303563963e-06,
+            "residual_ci95": [
+              -0.00018621284317974496,
+              0.0001748008092997965
+            ],
+            "residual_ci90": [
+              -0.00016084485745998522,
+              0.00014920902309245585
+            ],
+            "effect_ci95": [
+              -0.0003469372628508188,
+              5.8464783208889075e-05
+            ],
+            "equivalent": true,
+            "equivalent_table": true
+          },
+          "minade6": {
+            "reference": 0.6792586350727752,
+            "sampler": 0.6804681044474569,
+            "matched": 0.6803883414834899,
+            "effect": 0.0012094693746816931,
+            "residual": 7.976296396694504e-05,
+            "residual_ci95": [
+              -0.00011566304485179646,
+              0.00027231188792378735
+            ],
+            "residual_ci90": [
+              -8.574862109695381e-05,
+              0.00024017852680757726
+            ],
+            "effect_ci95": [
+              0.0009832276610156898,
+              0.001450995872897881
+            ]
+          },
+          "flip": {
+            "reference": 0.0,
+            "sampler": 0.00125,
+            "matched": 0.0006068594960063692,
+            "effect": 0.00125,
+            "residual": 0.0006431405039936308,
+            "residual_ci95": [
+              -0.0004874616119388136,
+              0.0021045933448295942
+            ],
+            "residual_ci90": [
+              -0.0003574431013641035,
+              0.0018223572023693987
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0029166666666666664
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 3,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 8,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_long": {
+            "reference": 0.0,
+            "sampler": 0.00041666666666666664,
+            "matched": 0.0004551446220047773,
+            "effect": 0.00041666666666666664,
+            "residual": -3.847795533811068e-05,
+            "residual_ci95": [
+              -0.0007243472159758084,
+              0.0010254439976505585
+            ],
+            "residual_ci90": [
+              -0.0006516129645721721,
+              0.0008640160882325696
+            ],
+            "effect_ci95": [
+              0.0,
+              0.00125
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 1,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 6,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "flip_lat": {
+            "reference": 0.0,
+            "sampler": 0.0008333333333333333,
+            "matched": 0.0001517148740015923,
+            "effect": 0.0008333333333333333,
+            "residual": 0.000681618459331741,
+            "residual_ci95": [
+              0.0,
+              0.001722732737280321
+            ],
+            "residual_ci90": [
+              0.0,
+              0.0016913621244743853
+            ],
+            "effect_ci95": [
+              0.0,
+              0.0020833333333333333
+            ],
+            "equivalent": true,
+            "clips_with_flip_sampler": 2,
+            "clips_with_flip_curve_bracket": {
+              "0.9": 2,
+              "1.0": 0
+            },
+            "equivalent_table": true
+          },
+          "cooling_ade1": {
+            "point": -0.00013255743110440754,
+            "ci95": [
+              -0.00024225664580893868,
+              -4.771770556565588e-05
+            ],
+            "ci90": [
+              -0.00021958470398041884,
+              -5.9135319151853995e-05
+            ],
+            "equivalent": true
+          }
+        }
+      },
+      "paired": {
+        "heun5_t1.0_minus_euler10_t1.0_flip": {
+          "point": 0.00019019282933970243,
+          "ci95": [
+            -0.0012702567200817809,
+            0.0016091257959822195
+          ],
+          "ci90": [
+            -0.0009890897330302425,
+            0.0014029870246038975
+          ]
+        },
+        "heun5_t1.0_minus_euler10_t1.0_ade1": {
+          "point": 0.00022914399015805387,
+          "ci95": [
+            -0.00026771565990336423,
+            0.0007438469918364026
+          ],
+          "ci90": [
+            -0.0001854536636942128,
+            0.0006675800374150552
+          ]
+        },
+        "heun3_t1.0_minus_heun5_t1.0_flip": {
+          "point": 0.0016666666666666668,
+          "ci95": [
+            0.0,
+            0.00375
+          ],
+          "ci90": [
+            0.0004166666666666663,
+            0.0033333333333333335
+          ]
+        },
+        "heun3_t1.0_minus_heun5_t1.0_ade1": {
+          "point": 0.0004211538806301318,
+          "ci95": [
+            -0.00011170004169909764,
+            0.0010110136629818216
+          ],
+          "ci90": [
+            -2.6559660035008203e-05,
+            0.0009063896359536637
+          ]
+        }
+      }
+    }
+  },
+  "predictions": {
+    "QH1_heun5_tau_ge_0.85": true,
+    "QH1_heun3_tau_ge_0.85": true,
+    "QH2_heun5_flip_resid_gt_e10": false,
+    "QH3_heun5_flip_resid_point_in_0_2pt": true,
+    "QH3_table_not_bold": true,
+    "QH4_heun5_ade1_equivalent_registered": false,
+    "QH4_heun5_ade1_equivalent_table": true,
+    "QH5_heun3_flip_resid_gt_heun5": true
+  }
+}

@@ -1,0 +1,2759 @@
+{
+  "scope": "Direction of numerical decision flips in solvable K-mode Gaussian-mixture flows.\n\nTests whether under-resolved integration moves decisions only from less to more\nprobable modes (numerical mode collapse), across solvers, schedules, mode counts\nand geometries. Closed-form marginal velocity for x_t=(1-t)z+t x1.\n",
+  "summary": {
+    "flips_to_more_probable": 535366,
+    "flips_to_less_probable": 198502,
+    "configs": 36,
+    "entropy_decreased_fraction": 0.9166666666666666
+  },
+  "results": [
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.2879,
+        0.7121
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 628,
+          "to_more_probable": 628,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.00528070425647309,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.4552
+        },
+        "euler4": {
+          "flips": 164,
+          "to_more_probable": 164,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0008284639528439719,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.4784
+        },
+        "euler8": {
+          "flips": 69,
+          "to_more_probable": 69,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0003012196196519046,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.48315
+        },
+        "heun2": {
+          "flips": 39,
+          "to_more_probable": 0,
+          "to_less_probable": 39,
+          "entropy_change_bits": 0.00013984775841213715,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.48855
+        },
+        "heun4": {
+          "flips": 10,
+          "to_more_probable": 0,
+          "to_less_probable": 10,
+          "entropy_change_bits": 3.795163461084439e-05,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.4871
+        },
+        "rk41": {
+          "flips": 24,
+          "to_more_probable": 24,
+          "to_less_probable": 0,
+          "entropy_change_bits": -9.697450131440633e-05,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.4854
+        },
+        "rk42": {
+          "flips": 29,
+          "to_more_probable": 29,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.00011822433099972773,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.48515
+        },
+        "cached8": {
+          "flips": 84,
+          "to_more_probable": 84,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.00037580041346330084,
+          "rarest_mode_freq_exact": 0.4866,
+          "rarest_mode_freq": 0.4824
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.8225,
+        0.1775
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 2358,
+          "to_more_probable": 2358,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3544621495339729,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.0564
+        },
+        "euler4": {
+          "flips": 923,
+          "to_more_probable": 923,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1151048210897353,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.12815
+        },
+        "euler8": {
+          "flips": 456,
+          "to_more_probable": 456,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.053866096502388494,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.1515
+        },
+        "heun2": {
+          "flips": 397,
+          "to_more_probable": 0,
+          "to_less_probable": 397,
+          "entropy_change_bits": 0.04262520215281307,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.19415
+        },
+        "heun4": {
+          "flips": 16,
+          "to_more_probable": 0,
+          "to_less_probable": 16,
+          "entropy_change_bits": 0.0017920321889454138,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.1751
+        },
+        "rk41": {
+          "flips": 158,
+          "to_more_probable": 158,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.018044585495966325,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.1664
+        },
+        "rk42": {
+          "flips": 8,
+          "to_more_probable": 8,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0008984204843507371,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.1739
+        },
+        "cached8": {
+          "flips": 2098,
+          "to_more_probable": 2098,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3037668878681494,
+          "rarest_mode_freq_exact": 0.1743,
+          "rarest_mode_freq": 0.0694
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.5459,
+        0.4541
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 1196,
+          "to_more_probable": 1196,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.022129640456657995,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.4064
+        },
+        "euler4": {
+          "flips": 321,
+          "to_more_probable": 321,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.003883285335126274,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.45015
+        },
+        "euler8": {
+          "flips": 137,
+          "to_more_probable": 137,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0014742495401649514,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.45935
+        },
+        "heun2": {
+          "flips": 150,
+          "to_more_probable": 0,
+          "to_less_probable": 150,
+          "entropy_change_bits": 0.0013021834600063231,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.4737
+        },
+        "heun4": {
+          "flips": 42,
+          "to_more_probable": 0,
+          "to_less_probable": 42,
+          "entropy_change_bits": 0.0003974550389405085,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.4683
+        },
+        "rk41": {
+          "flips": 61,
+          "to_more_probable": 61,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0006227905989233395,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.46315
+        },
+        "rk42": {
+          "flips": 20,
+          "to_more_probable": 20,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0001982492016072701,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.4652
+        },
+        "cached8": {
+          "flips": 288,
+          "to_more_probable": 288,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.003414974668026316,
+          "rarest_mode_freq_exact": 0.4662,
+          "rarest_mode_freq": 0.4518
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.1001,
+        0.8999
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 1453,
+          "to_more_probable": 1453,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.28630374522842844,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.02825
+        },
+        "euler4": {
+          "flips": 772,
+          "to_more_probable": 772,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.13533385562972755,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0623
+        },
+        "euler8": {
+          "flips": 390,
+          "to_more_probable": 390,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.06474898263425383,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0814
+        },
+        "heun2": {
+          "flips": 444,
+          "to_more_probable": 444,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.07426013768293577,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0787
+        },
+        "heun4": {
+          "flips": 224,
+          "to_more_probable": 224,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.03637438850877567,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0897
+        },
+        "rk41": {
+          "flips": 139,
+          "to_more_probable": 139,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.022323298172203465,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.09395
+        },
+        "rk42": {
+          "flips": 232,
+          "to_more_probable": 232,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.03771306875630365,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0893
+        },
+        "cached8": {
+          "flips": 1922,
+          "to_more_probable": 1922,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.4279605620846593,
+          "rarest_mode_freq_exact": 0.1009,
+          "rarest_mode_freq": 0.0048
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.545,
+        0.455
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3357,
+          "to_more_probable": 3357,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1275622407728646,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.28865
+        },
+        "euler4": {
+          "flips": 870,
+          "to_more_probable": 870,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.016484288431691696,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.413
+        },
+        "euler8": {
+          "flips": 310,
+          "to_more_probable": 310,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.004600694590069954,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.441
+        },
+        "heun2": {
+          "flips": 3243,
+          "to_more_probable": 3243,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.12025888170719845,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.29435
+        },
+        "heun4": {
+          "flips": 639,
+          "to_more_probable": 639,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.011021791816205995,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.42455
+        },
+        "rk41": {
+          "flips": 3241,
+          "to_more_probable": 3241,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.12013277441767556,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.29445
+        },
+        "rk42": {
+          "flips": 578,
+          "to_more_probable": 578,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.009711035412124258,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.4276
+        },
+        "cached8": {
+          "flips": 512,
+          "to_more_probable": 512,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.008354595612642512,
+          "rarest_mode_freq_exact": 0.4565,
+          "rarest_mode_freq": 0.4309
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.5418,
+        0.4582
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 1796,
+          "to_more_probable": 1796,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.04599951656839629,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.3675
+        },
+        "euler4": {
+          "flips": 435,
+          "to_more_probable": 435,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.006751436548056544,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.43555
+        },
+        "euler8": {
+          "flips": 150,
+          "to_more_probable": 150,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0020162475417975223,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.4498
+        },
+        "heun2": {
+          "flips": 1628,
+          "to_more_probable": 1628,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.03963790384298638,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.3759
+        },
+        "heun4": {
+          "flips": 209,
+          "to_more_probable": 209,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.002899107426043157,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.44685
+        },
+        "rk41": {
+          "flips": 1622,
+          "to_more_probable": 1622,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.03941875205757861,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.3762
+        },
+        "rk42": {
+          "flips": 101,
+          "to_more_probable": 101,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0013215901618695014,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.45225
+        },
+        "cached8": {
+          "flips": 593,
+          "to_more_probable": 593,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0098894762687195,
+          "rarest_mode_freq_exact": 0.4573,
+          "rarest_mode_freq": 0.42765
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.4808,
+        0.5192
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 513,
+          "to_more_probable": 513,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.005052746198990654,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.4531
+        },
+        "euler4": {
+          "flips": 139,
+          "to_more_probable": 139,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0009924691725081702,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.4718
+        },
+        "euler8": {
+          "flips": 56,
+          "to_more_probable": 56,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.00036623449030670496,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.47595
+        },
+        "heun2": {
+          "flips": 392,
+          "to_more_probable": 392,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0035169597289010923,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.45915
+        },
+        "heun4": {
+          "flips": 41,
+          "to_more_probable": 41,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.00026369037446594135,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.4767
+        },
+        "rk41": {
+          "flips": 380,
+          "to_more_probable": 380,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.003376247589770731,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.45975
+        },
+        "rk42": {
+          "flips": 8,
+          "to_more_probable": 0,
+          "to_less_probable": 8,
+          "entropy_change_bits": 4.861870926053946e-05,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.47915
+        },
+        "cached8": {
+          "flips": 354,
+          "to_more_probable": 354,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0030785441510353673,
+          "rarest_mode_freq_exact": 0.47875,
+          "rarest_mode_freq": 0.46105
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.3106,
+        0.6894
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3300,
+          "to_more_probable": 3300,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2920022746238603,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.14785
+        },
+        "euler4": {
+          "flips": 1011,
+          "to_more_probable": 1011,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0662386392420028,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.2623
+        },
+        "euler8": {
+          "flips": 457,
+          "to_more_probable": 457,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.027714701212915416,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.29
+        },
+        "heun2": {
+          "flips": 2495,
+          "to_more_probable": 2495,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.19895610430014343,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.1881
+        },
+        "heun4": {
+          "flips": 348,
+          "to_more_probable": 348,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.020778254194479318,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.29545
+        },
+        "rk41": {
+          "flips": 2417,
+          "to_more_probable": 2417,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.19079934109214503,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.192
+        },
+        "rk42": {
+          "flips": 90,
+          "to_more_probable": 0,
+          "to_less_probable": 90,
+          "entropy_change_bits": 0.005040419720207412,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.31735
+        },
+        "cached8": {
+          "flips": 2907,
+          "to_more_probable": 2907,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.24448218776609787,
+          "rarest_mode_freq_exact": 0.31285,
+          "rarest_mode_freq": 0.1675
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.6437,
+        0.3563
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 4121,
+          "to_more_probable": 4121,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.32467627379418285,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.15295
+        },
+        "euler4": {
+          "flips": 1139,
+          "to_more_probable": 1139,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.05806759527585337,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.30205
+        },
+        "euler8": {
+          "flips": 441,
+          "to_more_probable": 441,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.01997986467324231,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.33695
+        },
+        "heun2": {
+          "flips": 3664,
+          "to_more_probable": 3664,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2710477095545474,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.1758
+        },
+        "heun4": {
+          "flips": 462,
+          "to_more_probable": 462,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.021008838477718283,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.3359
+        },
+        "rk41": {
+          "flips": 3643,
+          "to_more_probable": 3643,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2687126773495081,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.17685
+        },
+        "rk42": {
+          "flips": 117,
+          "to_more_probable": 117,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.005000128258652481,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.35315
+        },
+        "cached8": {
+          "flips": 1924,
+          "to_more_probable": 1924,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.11090769721121907,
+          "rarest_mode_freq_exact": 0.359,
+          "rarest_mode_freq": 0.2628
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.5178,
+        0.4822
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 1663,
+          "to_more_probable": 1663,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.029059434313022492,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.3983
+        },
+        "euler4": {
+          "flips": 386,
+          "to_more_probable": 386,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0031445339947411277,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.46215
+        },
+        "euler8": {
+          "flips": 136,
+          "to_more_probable": 136,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0008619139477991089,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.47465
+        },
+        "heun2": {
+          "flips": 1615,
+          "to_more_probable": 1615,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.027648306428103564,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.4007
+        },
+        "heun4": {
+          "flips": 305,
+          "to_more_probable": 305,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0023058024280832035,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.4662
+        },
+        "rk41": {
+          "flips": 1615,
+          "to_more_probable": 1615,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.027648306428103564,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.4007
+        },
+        "rk42": {
+          "flips": 293,
+          "to_more_probable": 293,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.002189635700054704,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.4668
+        },
+        "cached8": {
+          "flips": 195,
+          "to_more_probable": 195,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.0013190176547491772,
+          "rarest_mode_freq_exact": 0.48145,
+          "rarest_mode_freq": 0.4717
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.6841,
+        0.3159
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 6328,
+          "to_more_probable": 6328,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.8888103304114642,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.00115
+        },
+        "euler4": {
+          "flips": 3837,
+          "to_more_probable": 3837,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3561708831835122,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.1257
+        },
+        "euler8": {
+          "flips": 1465,
+          "to_more_probable": 1465,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.09957904708378862,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.2443
+        },
+        "heun2": {
+          "flips": 6322,
+          "to_more_probable": 6322,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.8859337473975358,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.00145
+        },
+        "heun4": {
+          "flips": 3323,
+          "to_more_probable": 3323,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.28836450383041257,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.1514
+        },
+        "rk41": {
+          "flips": 6322,
+          "to_more_probable": 6322,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.8859337473975358,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.00145
+        },
+        "rk42": {
+          "flips": 3244,
+          "to_more_probable": 3244,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2786289455042291,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.15535
+        },
+        "cached8": {
+          "flips": 1829,
+          "to_more_probable": 1829,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1305467206011116,
+          "rarest_mode_freq_exact": 0.31755,
+          "rarest_mode_freq": 0.2261
+        }
+      }
+    },
+    {
+      "k": 2,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.7491,
+        0.2509
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 5002,
+          "to_more_probable": 5002,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.7999585867073398,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.0012
+        },
+        "euler4": {
+          "flips": 2932,
+          "to_more_probable": 2932,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.32961248264693416,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.1047
+        },
+        "euler8": {
+          "flips": 1184,
+          "to_more_probable": 1184,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.10748819658804643,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.1921
+        },
+        "heun2": {
+          "flips": 4992,
+          "to_more_probable": 4992,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.7952411615468716,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.0017
+        },
+        "heun4": {
+          "flips": 2191,
+          "to_more_probable": 2191,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.22452846223811462,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.14175
+        },
+        "rk41": {
+          "flips": 4992,
+          "to_more_probable": 4992,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.7952411615468716,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.0017
+        },
+        "rk42": {
+          "flips": 1994,
+          "to_more_probable": 1994,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.19950221754423636,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.1516
+        },
+        "cached8": {
+          "flips": 1995,
+          "to_more_probable": 1995,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.19962645531005474,
+          "rarest_mode_freq_exact": 0.2513,
+          "rarest_mode_freq": 0.15155
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.2036,
+        0.4891,
+        0.3073
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3901,
+          "to_more_probable": 3901,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2331678607814811,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.10655
+        },
+        "euler4": {
+          "flips": 1457,
+          "to_more_probable": 1457,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.06922319349570127,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.16095
+        },
+        "euler8": {
+          "flips": 668,
+          "to_more_probable": 668,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.028538705362520123,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.1846
+        },
+        "heun2": {
+          "flips": 607,
+          "to_more_probable": 341,
+          "to_less_probable": 266,
+          "entropy_change_bits": -0.010534827528132507,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.18855
+        },
+        "heun4": {
+          "flips": 273,
+          "to_more_probable": 202,
+          "to_less_probable": 71,
+          "entropy_change_bits": -0.00791393822154074,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.1955
+        },
+        "rk41": {
+          "flips": 92,
+          "to_more_probable": 72,
+          "to_less_probable": 20,
+          "entropy_change_bits": -0.001451328774768612,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.2051
+        },
+        "rk42": {
+          "flips": 259,
+          "to_more_probable": 259,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.012502647954431234,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.19305
+        },
+        "cached8": {
+          "flips": 3474,
+          "to_more_probable": 3474,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.29072127804836234,
+          "rarest_mode_freq_exact": 0.2056,
+          "rarest_mode_freq": 0.055
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.15,
+        0.2791,
+        0.5709
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 2801,
+          "to_more_probable": 2801,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.22477635284526798,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.06295
+        },
+        "euler4": {
+          "flips": 1161,
+          "to_more_probable": 1161,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.08140561557816905,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.10955
+        },
+        "euler8": {
+          "flips": 511,
+          "to_more_probable": 511,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.032484416036833386,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.1337
+        },
+        "heun2": {
+          "flips": 468,
+          "to_more_probable": 398,
+          "to_less_probable": 70,
+          "entropy_change_bits": -0.023605032774880907,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.13225
+        },
+        "heun4": {
+          "flips": 229,
+          "to_more_probable": 222,
+          "to_less_probable": 7,
+          "entropy_change_bits": -0.013552010496671762,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.14305
+        },
+        "rk41": {
+          "flips": 159,
+          "to_more_probable": 127,
+          "to_less_probable": 32,
+          "entropy_change_bits": -0.006067299744443977,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.14875
+        },
+        "rk42": {
+          "flips": 248,
+          "to_more_probable": 240,
+          "to_less_probable": 8,
+          "entropy_change_bits": -0.014600899695603298,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.1424
+        },
+        "cached8": {
+          "flips": 3503,
+          "to_more_probable": 3503,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.36321568748095334,
+          "rarest_mode_freq_exact": 0.15205,
+          "rarest_mode_freq": 0.02405
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.2768,
+        0.1033,
+        0.6199
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3927,
+          "to_more_probable": 3236,
+          "to_less_probable": 691,
+          "entropy_change_bits": -0.32253838399398904,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.0703
+        },
+        "euler4": {
+          "flips": 1400,
+          "to_more_probable": 1114,
+          "to_less_probable": 286,
+          "entropy_change_bits": -0.08514664014535511,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.0999
+        },
+        "euler8": {
+          "flips": 612,
+          "to_more_probable": 473,
+          "to_less_probable": 139,
+          "entropy_change_bits": -0.03364331302068546,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.10485
+        },
+        "heun2": {
+          "flips": 1562,
+          "to_more_probable": 768,
+          "to_less_probable": 794,
+          "entropy_change_bits": 0.005819492114176983,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.148
+        },
+        "heun4": {
+          "flips": 314,
+          "to_more_probable": 139,
+          "to_less_probable": 175,
+          "entropy_change_bits": 0.007756523524028447,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.11705
+        },
+        "rk41": {
+          "flips": 1314,
+          "to_more_probable": 995,
+          "to_less_probable": 319,
+          "entropy_change_bits": -0.06475729409273812,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.10985
+        },
+        "rk42": {
+          "flips": 157,
+          "to_more_probable": 44,
+          "to_less_probable": 113,
+          "entropy_change_bits": 0.010111947890499406,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.1141
+        },
+        "cached8": {
+          "flips": 3777,
+          "to_more_probable": 2875,
+          "to_less_probable": 902,
+          "entropy_change_bits": -0.251366265164253,
+          "rarest_mode_freq_exact": 0.1085,
+          "rarest_mode_freq": 0.13225
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.0659,
+        0.2511,
+        0.683
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3066,
+          "to_more_probable": 3066,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.36901021277104973,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.0155
+        },
+        "euler4": {
+          "flips": 1313,
+          "to_more_probable": 1313,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.13640496664125346,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.0401
+        },
+        "euler8": {
+          "flips": 611,
+          "to_more_probable": 611,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.059573357599562504,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.0547
+        },
+        "heun2": {
+          "flips": 1645,
+          "to_more_probable": 1645,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.17495399191167982,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.04155
+        },
+        "heun4": {
+          "flips": 349,
+          "to_more_probable": 349,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.033341930214290105,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.06105
+        },
+        "rk41": {
+          "flips": 1357,
+          "to_more_probable": 1357,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.14125735677856177,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.049
+        },
+        "rk42": {
+          "flips": 146,
+          "to_more_probable": 143,
+          "to_less_probable": 3,
+          "entropy_change_bits": -0.014312363091937064,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.0634
+        },
+        "cached8": {
+          "flips": 3802,
+          "to_more_probable": 3802,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.5031118337892185,
+          "rarest_mode_freq_exact": 0.0692,
+          "rarest_mode_freq": 0.00285
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.0568,
+        0.5164,
+        0.4268
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3123,
+          "to_more_probable": 3123,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3369128792660747,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.00045
+        },
+        "euler4": {
+          "flips": 1345,
+          "to_more_probable": 1345,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.16827354347245804,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.01755
+        },
+        "euler8": {
+          "flips": 685,
+          "to_more_probable": 685,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.08281806368124944,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.03495
+        },
+        "heun2": {
+          "flips": 2279,
+          "to_more_probable": 2279,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.22721628227058632,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.0119
+        },
+        "heun4": {
+          "flips": 408,
+          "to_more_probable": 408,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.04673118148715161,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.04395
+        },
+        "rk41": {
+          "flips": 1517,
+          "to_more_probable": 1515,
+          "to_less_probable": 2,
+          "entropy_change_bits": -0.07021979623006169,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.0461
+        },
+        "rk42": {
+          "flips": 176,
+          "to_more_probable": 22,
+          "to_less_probable": 154,
+          "entropy_change_bits": 0.010838545420846168,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.06015
+        },
+        "cached8": {
+          "flips": 3005,
+          "to_more_probable": 3005,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.33181241516837745,
+          "rarest_mode_freq_exact": 0.057,
+          "rarest_mode_freq": 0.00035
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.5207,
+        0.1315,
+        0.3478
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 11825,
+          "to_more_probable": 0,
+          "to_less_probable": 11825,
+          "entropy_change_bits": -0.5434534702397219,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.72235
+        },
+        "euler4": {
+          "flips": 4395,
+          "to_more_probable": 1,
+          "to_less_probable": 4394,
+          "entropy_change_bits": 0.06807019405249926,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.3508
+        },
+        "euler8": {
+          "flips": 1989,
+          "to_more_probable": 2,
+          "to_less_probable": 1987,
+          "entropy_change_bits": 0.09120614279020556,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.2304
+        },
+        "heun2": {
+          "flips": 9858,
+          "to_more_probable": 0,
+          "to_less_probable": 9858,
+          "entropy_change_bits": -0.17992809327807868,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.624
+        },
+        "heun4": {
+          "flips": 1134,
+          "to_more_probable": 11,
+          "to_less_probable": 1123,
+          "entropy_change_bits": 0.061773564835806205,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.18675
+        },
+        "rk41": {
+          "flips": 5197,
+          "to_more_probable": 767,
+          "to_less_probable": 4430,
+          "entropy_change_bits": 0.1693972161075461,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.3108
+        },
+        "rk42": {
+          "flips": 541,
+          "to_more_probable": 386,
+          "to_less_probable": 155,
+          "entropy_change_bits": -0.022112833502830664,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.1196
+        },
+        "cached8": {
+          "flips": 7199,
+          "to_more_probable": 0,
+          "to_less_probable": 7199,
+          "entropy_change_bits": -0.06846000914976136,
+          "rarest_mode_freq_exact": 0.1311,
+          "rarest_mode_freq": 0.49105
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.5145,
+        0.2409,
+        0.2447
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 2828,
+          "to_more_probable": 2349,
+          "to_less_probable": 479,
+          "entropy_change_bits": -0.1774218875225262,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.21605
+        },
+        "euler4": {
+          "flips": 793,
+          "to_more_probable": 574,
+          "to_less_probable": 219,
+          "entropy_change_bits": -0.03464221275542112,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.2393
+        },
+        "euler8": {
+          "flips": 332,
+          "to_more_probable": 225,
+          "to_less_probable": 107,
+          "entropy_change_bits": -0.012818052025377558,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.24125
+        },
+        "heun2": {
+          "flips": 2268,
+          "to_more_probable": 1870,
+          "to_less_probable": 398,
+          "entropy_change_bits": -0.13350240172086947,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.223
+        },
+        "heun4": {
+          "flips": 274,
+          "to_more_probable": 188,
+          "to_less_probable": 86,
+          "entropy_change_bits": -0.010621298284881009,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.241
+        },
+        "rk41": {
+          "flips": 2232,
+          "to_more_probable": 1840,
+          "to_less_probable": 392,
+          "entropy_change_bits": -0.1308985439234247,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.22345
+        },
+        "rk42": {
+          "flips": 44,
+          "to_more_probable": 25,
+          "to_less_probable": 19,
+          "entropy_change_bits": 0.00048276678009906426,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.24085
+        },
+        "cached8": {
+          "flips": 2121,
+          "to_more_probable": 1672,
+          "to_less_probable": 449,
+          "entropy_change_bits": -0.11627406948746444,
+          "rarest_mode_freq_exact": 0.2415,
+          "rarest_mode_freq": 0.22505
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.3085,
+        0.0504,
+        0.6411
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 4825,
+          "to_more_probable": 4825,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.5968971487543147,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.0061
+        },
+        "euler4": {
+          "flips": 1492,
+          "to_more_probable": 1492,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1467571208749252,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.0321
+        },
+        "euler8": {
+          "flips": 636,
+          "to_more_probable": 636,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.06151715496661003,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.04135
+        },
+        "heun2": {
+          "flips": 4327,
+          "to_more_probable": 4327,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.5103427031876843,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.0101
+        },
+        "heun4": {
+          "flips": 588,
+          "to_more_probable": 586,
+          "to_less_probable": 2,
+          "entropy_change_bits": -0.05125163169379543,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.04415
+        },
+        "rk41": {
+          "flips": 4280,
+          "to_more_probable": 4280,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.5026620962024474,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.0105
+        },
+        "rk42": {
+          "flips": 106,
+          "to_more_probable": 66,
+          "to_less_probable": 40,
+          "entropy_change_bits": 0.002777643440003974,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.0527
+        },
+        "cached8": {
+          "flips": 3035,
+          "to_more_probable": 3035,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.38175755568143166,
+          "rarest_mode_freq_exact": 0.0507,
+          "rarest_mode_freq": 0.00365
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.3112,
+        0.4171,
+        0.2716
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 6866,
+          "to_more_probable": 6866,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.5317046502408052,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.0545
+        },
+        "euler4": {
+          "flips": 2126,
+          "to_more_probable": 2126,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.08506197020709494,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.1991
+        },
+        "euler8": {
+          "flips": 834,
+          "to_more_probable": 834,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.02568193420878262,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.24445
+        },
+        "heun2": {
+          "flips": 6191,
+          "to_more_probable": 6191,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.44565416086178855,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.0665
+        },
+        "heun4": {
+          "flips": 903,
+          "to_more_probable": 902,
+          "to_less_probable": 1,
+          "entropy_change_bits": -0.028168012587115987,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.23825
+        },
+        "rk41": {
+          "flips": 6140,
+          "to_more_probable": 6140,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.43971754480985226,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.0672
+        },
+        "rk42": {
+          "flips": 349,
+          "to_more_probable": 292,
+          "to_less_probable": 57,
+          "entropy_change_bits": -0.00643757381924015,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.2583
+        },
+        "cached8": {
+          "flips": 3741,
+          "to_more_probable": 3741,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.19389078405948346,
+          "rarest_mode_freq_exact": 0.27275,
+          "rarest_mode_freq": 0.17035
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.0831,
+        0.7118,
+        0.2052
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 5740,
+          "to_more_probable": 5740,
+          "to_less_probable": 0,
+          "entropy_change_bits": -1.1132573102308012,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.0
+        },
+        "euler4": {
+          "flips": 3929,
+          "to_more_probable": 3929,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.603031256850258,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.0184
+        },
+        "euler8": {
+          "flips": 1611,
+          "to_more_probable": 1611,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1997532117023687,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.05595
+        },
+        "heun2": {
+          "flips": 5740,
+          "to_more_probable": 5740,
+          "to_less_probable": 0,
+          "entropy_change_bits": -1.1132573102308012,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.0
+        },
+        "heun4": {
+          "flips": 3227,
+          "to_more_probable": 3227,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.46388170505770177,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.03025
+        },
+        "rk41": {
+          "flips": 5740,
+          "to_more_probable": 5740,
+          "to_less_probable": 0,
+          "entropy_change_bits": -1.1132573102308012,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.0
+        },
+        "rk42": {
+          "flips": 3074,
+          "to_more_probable": 3074,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.43551044439094166,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.03285
+        },
+        "cached8": {
+          "flips": 2513,
+          "to_more_probable": 2513,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3383516952803074,
+          "rarest_mode_freq_exact": 0.08355,
+          "rarest_mode_freq": 0.0368
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.3994,
+        0.3365,
+        0.2641
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 11200,
+          "to_more_probable": 5225,
+          "to_less_probable": 5975,
+          "entropy_change_bits": -1.0788182303572103,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.0018
+        },
+        "euler4": {
+          "flips": 4646,
+          "to_more_probable": 2846,
+          "to_less_probable": 1800,
+          "entropy_change_bits": -0.20436327149752964,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.12075
+        },
+        "euler8": {
+          "flips": 1688,
+          "to_more_probable": 1083,
+          "to_less_probable": 605,
+          "entropy_change_bits": -0.037064941951846286,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.2089
+        },
+        "heun2": {
+          "flips": 11105,
+          "to_more_probable": 5213,
+          "to_less_probable": 5892,
+          "entropy_change_bits": -1.0600725874748513,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.0024
+        },
+        "heun4": {
+          "flips": 3843,
+          "to_more_probable": 2351,
+          "to_less_probable": 1492,
+          "entropy_change_bits": -0.14217367931049907,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.1455
+        },
+        "rk41": {
+          "flips": 11104,
+          "to_more_probable": 5213,
+          "to_less_probable": 5891,
+          "entropy_change_bits": -1.0599173383489586,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.0024
+        },
+        "rk42": {
+          "flips": 3713,
+          "to_more_probable": 2263,
+          "to_less_probable": 1450,
+          "entropy_change_bits": -0.13285331160944747,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.1499
+        },
+        "cached8": {
+          "flips": 2231,
+          "to_more_probable": 1492,
+          "to_less_probable": 739,
+          "entropy_change_bits": -0.06197672719268721,
+          "rarest_mode_freq_exact": 0.26305,
+          "rarest_mode_freq": 0.18845
+        }
+      }
+    },
+    {
+      "k": 3,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.0619,
+        0.4776,
+        0.4605
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 1956,
+          "to_more_probable": 1956,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2763654583150499,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0
+        },
+        "euler4": {
+          "flips": 1358,
+          "to_more_probable": 1358,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.25419271994557535,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.00175
+        },
+        "euler8": {
+          "flips": 765,
+          "to_more_probable": 765,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.12580724997288106,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.02525
+        },
+        "heun2": {
+          "flips": 1930,
+          "to_more_probable": 1930,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2759996907210025,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0
+        },
+        "heun4": {
+          "flips": 1286,
+          "to_more_probable": 1286,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.24213969080003572,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0033
+        },
+        "rk41": {
+          "flips": 1930,
+          "to_more_probable": 1930,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.2759996907210025,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0
+        },
+        "rk42": {
+          "flips": 1268,
+          "to_more_probable": 1268,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.23924810425614895,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0037
+        },
+        "cached8": {
+          "flips": 907,
+          "to_more_probable": 907,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.15059134302630817,
+          "rarest_mode_freq_exact": 0.061,
+          "rarest_mode_freq": 0.0197
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.1432,
+        0.473,
+        0.0668,
+        0.2524,
+        0.0646
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 3212,
+          "to_more_probable": 3212,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.3673999336498013,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.0053
+        },
+        "euler4": {
+          "flips": 1688,
+          "to_more_probable": 1688,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.16327199191350905,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.02605
+        },
+        "euler8": {
+          "flips": 899,
+          "to_more_probable": 899,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.07368349910004102,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.04285
+        },
+        "heun2": {
+          "flips": 455,
+          "to_more_probable": 399,
+          "to_less_probable": 56,
+          "entropy_change_bits": -0.027542733237676975,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.05085
+        },
+        "heun4": {
+          "flips": 269,
+          "to_more_probable": 266,
+          "to_less_probable": 3,
+          "entropy_change_bits": -0.020386429112221993,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.0552
+        },
+        "rk41": {
+          "flips": 727,
+          "to_more_probable": 286,
+          "to_less_probable": 441,
+          "entropy_change_bits": 0.014124222069881176,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.08
+        },
+        "rk42": {
+          "flips": 327,
+          "to_more_probable": 317,
+          "to_less_probable": 10,
+          "entropy_change_bits": -0.024322817342807168,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.0542
+        },
+        "cached8": {
+          "flips": 2916,
+          "to_more_probable": 2905,
+          "to_less_probable": 11,
+          "entropy_change_bits": -0.40824794313102375,
+          "rarest_mode_freq_exact": 0.0626,
+          "rarest_mode_freq": 0.0007
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.0936,
+        0.0816,
+        0.1077,
+        0.1417,
+        0.5754
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 7049,
+          "to_more_probable": 4920,
+          "to_less_probable": 2129,
+          "entropy_change_bits": -0.7825976168063629,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.0118
+        },
+        "euler4": {
+          "flips": 3527,
+          "to_more_probable": 2378,
+          "to_less_probable": 1149,
+          "entropy_change_bits": -0.2760237712178846,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.04335
+        },
+        "euler8": {
+          "flips": 1785,
+          "to_more_probable": 1216,
+          "to_less_probable": 569,
+          "entropy_change_bits": -0.1192980994341668,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.0624
+        },
+        "heun2": {
+          "flips": 2043,
+          "to_more_probable": 265,
+          "to_less_probable": 1778,
+          "entropy_change_bits": 0.12075568254798363,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.06925
+        },
+        "heun4": {
+          "flips": 480,
+          "to_more_probable": 166,
+          "to_less_probable": 314,
+          "entropy_change_bits": 0.016548380694116904,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.07365
+        },
+        "rk41": {
+          "flips": 1772,
+          "to_more_probable": 159,
+          "to_less_probable": 1613,
+          "entropy_change_bits": 0.05459087482811387,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.07665
+        },
+        "rk42": {
+          "flips": 325,
+          "to_more_probable": 219,
+          "to_less_probable": 106,
+          "entropy_change_bits": -0.007265156343433388,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.07345
+        },
+        "cached8": {
+          "flips": 6855,
+          "to_more_probable": 5437,
+          "to_less_probable": 1418,
+          "entropy_change_bits": -0.8920169595157119,
+          "rarest_mode_freq_exact": 0.0814,
+          "rarest_mode_freq": 0.00675
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 1.0,
+      "weights": [
+        0.1987,
+        0.0858,
+        0.4895,
+        0.1491,
+        0.0768
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 6148,
+          "to_more_probable": 4842,
+          "to_less_probable": 1306,
+          "entropy_change_bits": -0.4398521199396417,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.0112
+        },
+        "euler4": {
+          "flips": 3509,
+          "to_more_probable": 2710,
+          "to_less_probable": 799,
+          "entropy_change_bits": -0.1505427055424673,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.0391
+        },
+        "euler8": {
+          "flips": 1774,
+          "to_more_probable": 1418,
+          "to_less_probable": 356,
+          "entropy_change_bits": -0.054621796077107376,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.05765
+        },
+        "heun2": {
+          "flips": 785,
+          "to_more_probable": 634,
+          "to_less_probable": 151,
+          "entropy_change_bits": -0.022769450054909157,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.06905
+        },
+        "heun4": {
+          "flips": 604,
+          "to_more_probable": 446,
+          "to_less_probable": 158,
+          "entropy_change_bits": -0.01217149256339467,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.07105
+        },
+        "rk41": {
+          "flips": 1091,
+          "to_more_probable": 317,
+          "to_less_probable": 774,
+          "entropy_change_bits": -0.003498712094516243,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.08865
+        },
+        "rk42": {
+          "flips": 893,
+          "to_more_probable": 631,
+          "to_less_probable": 262,
+          "entropy_change_bits": -0.015009447895433903,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.06875
+        },
+        "cached8": {
+          "flips": 9734,
+          "to_more_probable": 5993,
+          "to_less_probable": 3741,
+          "entropy_change_bits": -0.8920255594361197,
+          "rarest_mode_freq_exact": 0.0788,
+          "rarest_mode_freq": 0.0014
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.2527,
+        0.1629,
+        0.3591,
+        0.0803,
+        0.145
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 7604,
+          "to_more_probable": 4687,
+          "to_less_probable": 2917,
+          "entropy_change_bits": -0.6137024682602685,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.0005
+        },
+        "euler4": {
+          "flips": 3832,
+          "to_more_probable": 3121,
+          "to_less_probable": 711,
+          "entropy_change_bits": -0.23352140761553675,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.0324
+        },
+        "euler8": {
+          "flips": 1907,
+          "to_more_probable": 1548,
+          "to_less_probable": 359,
+          "entropy_change_bits": -0.08152097355521004,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.05585
+        },
+        "heun2": {
+          "flips": 6815,
+          "to_more_probable": 4470,
+          "to_less_probable": 2345,
+          "entropy_change_bits": -0.5281003352365394,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.00305
+        },
+        "heun4": {
+          "flips": 1270,
+          "to_more_probable": 1167,
+          "to_less_probable": 103,
+          "entropy_change_bits": -0.05799812753738687,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.0633
+        },
+        "rk41": {
+          "flips": 5907,
+          "to_more_probable": 3635,
+          "to_less_probable": 2272,
+          "entropy_change_bits": -0.35722590599087,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.0076
+        },
+        "rk42": {
+          "flips": 1052,
+          "to_more_probable": 375,
+          "to_less_probable": 677,
+          "entropy_change_bits": 0.004430486254151322,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.0911
+        },
+        "cached8": {
+          "flips": 5698,
+          "to_more_probable": 4229,
+          "to_less_probable": 1469,
+          "entropy_change_bits": -0.4405194216368129,
+          "rarest_mode_freq_exact": 0.08075,
+          "rarest_mode_freq": 0.00655
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.0013,
+        0.0169,
+        0.5461,
+        0.2025,
+        0.2332
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 6284,
+          "to_more_probable": 6284,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.7669281927401335,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.0
+        },
+        "euler4": {
+          "flips": 2920,
+          "to_more_probable": 2920,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.29701094448704435,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.00025
+        },
+        "euler8": {
+          "flips": 1327,
+          "to_more_probable": 1327,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.1264364403542626,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.0005
+        },
+        "heun2": {
+          "flips": 2536,
+          "to_more_probable": 2134,
+          "to_less_probable": 402,
+          "entropy_change_bits": -0.24225470107840996,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.0
+        },
+        "heun4": {
+          "flips": 640,
+          "to_more_probable": 640,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.07309832184927201,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.0005
+        },
+        "rk41": {
+          "flips": 2212,
+          "to_more_probable": 1720,
+          "to_less_probable": 492,
+          "entropy_change_bits": -0.1862674007844416,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 5e-05
+        },
+        "rk42": {
+          "flips": 332,
+          "to_more_probable": 329,
+          "to_less_probable": 3,
+          "entropy_change_bits": -0.02092643806403771,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.001
+        },
+        "cached8": {
+          "flips": 6192,
+          "to_more_probable": 6192,
+          "to_less_probable": 0,
+          "entropy_change_bits": -0.7842302688296543,
+          "rarest_mode_freq_exact": 0.0009,
+          "rarest_mode_freq": 0.0
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 2,
+      "scale": 3.0,
+      "weights": [
+        0.3248,
+        0.2381,
+        0.1444,
+        0.2481,
+        0.0445
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 12566,
+          "to_more_probable": 1485,
+          "to_less_probable": 11081,
+          "entropy_change_bits": -1.1786422376311867,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.00015
+        },
+        "euler4": {
+          "flips": 5566,
+          "to_more_probable": 1254,
+          "to_less_probable": 4312,
+          "entropy_change_bits": -0.21092632686485868,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.01265
+        },
+        "euler8": {
+          "flips": 2459,
+          "to_more_probable": 603,
+          "to_less_probable": 1856,
+          "entropy_change_bits": -0.028834180806017073,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.0292
+        },
+        "heun2": {
+          "flips": 9689,
+          "to_more_probable": 1677,
+          "to_less_probable": 8012,
+          "entropy_change_bits": -0.7015610408617696,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.0067
+        },
+        "heun4": {
+          "flips": 1989,
+          "to_more_probable": 819,
+          "to_less_probable": 1170,
+          "entropy_change_bits": -0.036989242893805674,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.03405
+        },
+        "rk41": {
+          "flips": 6508,
+          "to_more_probable": 1566,
+          "to_less_probable": 4942,
+          "entropy_change_bits": -0.3898180894861125,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.02575
+        },
+        "rk42": {
+          "flips": 1903,
+          "to_more_probable": 1184,
+          "to_less_probable": 719,
+          "entropy_change_bits": -0.026543786610796705,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.04405
+        },
+        "cached8": {
+          "flips": 10202,
+          "to_more_probable": 710,
+          "to_less_probable": 9492,
+          "entropy_change_bits": -0.5668520073071375,
+          "rarest_mode_freq_exact": 0.04335,
+          "rarest_mode_freq": 0.0082
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.5116,
+        0.2286,
+        0.0653,
+        0.1579,
+        0.0366
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 4672,
+          "to_more_probable": 4419,
+          "to_less_probable": 253,
+          "entropy_change_bits": -0.5279867790159123,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.01475
+        },
+        "euler4": {
+          "flips": 1679,
+          "to_more_probable": 1478,
+          "to_less_probable": 201,
+          "entropy_change_bits": -0.12619357388665486,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.02975
+        },
+        "euler8": {
+          "flips": 751,
+          "to_more_probable": 637,
+          "to_less_probable": 114,
+          "entropy_change_bits": -0.047495098606560315,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.034
+        },
+        "heun2": {
+          "flips": 3895,
+          "to_more_probable": 3570,
+          "to_less_probable": 325,
+          "entropy_change_bits": -0.3908129253878998,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.0219
+        },
+        "heun4": {
+          "flips": 631,
+          "to_more_probable": 544,
+          "to_less_probable": 87,
+          "entropy_change_bits": -0.04117399465130567,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.03445
+        },
+        "rk41": {
+          "flips": 3843,
+          "to_more_probable": 3513,
+          "to_less_probable": 330,
+          "entropy_change_bits": -0.38207340827880487,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.02265
+        },
+        "rk42": {
+          "flips": 193,
+          "to_more_probable": 120,
+          "to_less_probable": 73,
+          "entropy_change_bits": -0.008329241226343154,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.03505
+        },
+        "cached8": {
+          "flips": 4415,
+          "to_more_probable": 4319,
+          "to_less_probable": 96,
+          "entropy_change_bits": -0.5170580125579016,
+          "rarest_mode_freq_exact": 0.03725,
+          "rarest_mode_freq": 0.0051
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.0351,
+        0.0178,
+        0.3409,
+        0.3694,
+        0.2368
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 6042,
+          "to_more_probable": 3624,
+          "to_less_probable": 2418,
+          "entropy_change_bits": -0.47584338927631276,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0053
+        },
+        "euler4": {
+          "flips": 2021,
+          "to_more_probable": 1333,
+          "to_less_probable": 688,
+          "entropy_change_bits": -0.11604825287629361,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0106
+        },
+        "euler8": {
+          "flips": 868,
+          "to_more_probable": 593,
+          "to_less_probable": 275,
+          "entropy_change_bits": -0.043231840244515096,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0142
+        },
+        "heun2": {
+          "flips": 4450,
+          "to_more_probable": 2549,
+          "to_less_probable": 1901,
+          "entropy_change_bits": -0.2579018607554313,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.01185
+        },
+        "heun4": {
+          "flips": 603,
+          "to_more_probable": 425,
+          "to_less_probable": 178,
+          "entropy_change_bits": -0.03462668543640235,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0141
+        },
+        "rk41": {
+          "flips": 4249,
+          "to_more_probable": 2394,
+          "to_less_probable": 1855,
+          "entropy_change_bits": -0.2310235808394714,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0127
+        },
+        "rk42": {
+          "flips": 337,
+          "to_more_probable": 211,
+          "to_less_probable": 126,
+          "entropy_change_bits": -0.01837360696171242,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 0.0139
+        },
+        "cached8": {
+          "flips": 5864,
+          "to_more_probable": 3863,
+          "to_less_probable": 2001,
+          "entropy_change_bits": -0.5532464868180087,
+          "rarest_mode_freq_exact": 0.0168,
+          "rarest_mode_freq": 5e-05
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 1.0,
+      "weights": [
+        0.2355,
+        0.1534,
+        0.0381,
+        0.1647,
+        0.4083
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 4393,
+          "to_more_probable": 3944,
+          "to_less_probable": 449,
+          "entropy_change_bits": -0.30154687956122306,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.0411
+        },
+        "euler4": {
+          "flips": 1344,
+          "to_more_probable": 1136,
+          "to_less_probable": 208,
+          "entropy_change_bits": -0.055375897607174096,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.0408
+        },
+        "euler8": {
+          "flips": 574,
+          "to_more_probable": 467,
+          "to_less_probable": 107,
+          "entropy_change_bits": -0.017701692158096805,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.0408
+        },
+        "heun2": {
+          "flips": 3569,
+          "to_more_probable": 3081,
+          "to_less_probable": 488,
+          "entropy_change_bits": -0.2031408312938543,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.0471
+        },
+        "heun4": {
+          "flips": 469,
+          "to_more_probable": 386,
+          "to_less_probable": 83,
+          "entropy_change_bits": -0.016249975059998256,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.03915
+        },
+        "rk41": {
+          "flips": 3514,
+          "to_more_probable": 3017,
+          "to_less_probable": 497,
+          "entropy_change_bits": -0.19610900714287305,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.04755
+        },
+        "rk42": {
+          "flips": 111,
+          "to_more_probable": 75,
+          "to_less_probable": 36,
+          "entropy_change_bits": -0.007107306665015134,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.03535
+        },
+        "cached8": {
+          "flips": 4034,
+          "to_more_probable": 3937,
+          "to_less_probable": 97,
+          "entropy_change_bits": -0.3411108129084628,
+          "rarest_mode_freq_exact": 0.0384,
+          "rarest_mode_freq": 0.01785
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.0302,
+        0.4423,
+        0.21,
+        0.1628,
+        0.1547
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 8191,
+          "to_more_probable": 6723,
+          "to_less_probable": 1468,
+          "entropy_change_bits": -1.000180721401014,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0
+        },
+        "euler4": {
+          "flips": 3238,
+          "to_more_probable": 2227,
+          "to_less_probable": 1011,
+          "entropy_change_bits": -0.2458277826735178,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0064
+        },
+        "euler8": {
+          "flips": 1146,
+          "to_more_probable": 712,
+          "to_less_probable": 434,
+          "entropy_change_bits": -0.06490013980324028,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0198
+        },
+        "heun2": {
+          "flips": 8097,
+          "to_more_probable": 6619,
+          "to_less_probable": 1478,
+          "entropy_change_bits": -0.9803299478221736,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0
+        },
+        "heun4": {
+          "flips": 2636,
+          "to_more_probable": 1806,
+          "to_less_probable": 830,
+          "entropy_change_bits": -0.1876156949566219,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0099
+        },
+        "rk41": {
+          "flips": 8096,
+          "to_more_probable": 6617,
+          "to_less_probable": 1479,
+          "entropy_change_bits": -0.9800288691247403,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0
+        },
+        "rk42": {
+          "flips": 2527,
+          "to_more_probable": 1742,
+          "to_less_probable": 785,
+          "entropy_change_bits": -0.17878416701311206,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0104
+        },
+        "cached8": {
+          "flips": 1876,
+          "to_more_probable": 1256,
+          "to_less_probable": 620,
+          "entropy_change_bits": -0.12702871728290033,
+          "rarest_mode_freq_exact": 0.03105,
+          "rarest_mode_freq": 0.0122
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.2968,
+        0.0569,
+        0.2706,
+        0.3142,
+        0.0616
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 11795,
+          "to_more_probable": 11757,
+          "to_less_probable": 38,
+          "entropy_change_bits": -1.461409955827342,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.00765
+        },
+        "euler4": {
+          "flips": 4941,
+          "to_more_probable": 4541,
+          "to_less_probable": 400,
+          "entropy_change_bits": -0.2311220860077816,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.05545
+        },
+        "euler8": {
+          "flips": 1825,
+          "to_more_probable": 1612,
+          "to_less_probable": 213,
+          "entropy_change_bits": -0.03685986497595417,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.05815
+        },
+        "heun2": {
+          "flips": 11643,
+          "to_more_probable": 11599,
+          "to_less_probable": 44,
+          "entropy_change_bits": -1.4226640986431356,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.0088
+        },
+        "heun4": {
+          "flips": 4016,
+          "to_more_probable": 3530,
+          "to_less_probable": 486,
+          "entropy_change_bits": -0.1269782829446504,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.06265
+        },
+        "rk41": {
+          "flips": 11642,
+          "to_more_probable": 11598,
+          "to_less_probable": 44,
+          "entropy_change_bits": -1.4223568611639914,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.0088
+        },
+        "rk42": {
+          "flips": 3806,
+          "to_more_probable": 3277,
+          "to_less_probable": 529,
+          "entropy_change_bits": -0.10220422696504272,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.06465
+        },
+        "cached8": {
+          "flips": 3152,
+          "to_more_probable": 3067,
+          "to_less_probable": 85,
+          "entropy_change_bits": -0.20145589847393586,
+          "rarest_mode_freq_exact": 0.0586,
+          "rarest_mode_freq": 0.03435
+        }
+      }
+    },
+    {
+      "k": 5,
+      "dim": 16,
+      "scale": 3.0,
+      "weights": [
+        0.2468,
+        0.1549,
+        0.1883,
+        0.3865,
+        0.0235
+      ],
+      "solvers": {
+        "euler2": {
+          "flips": 8172,
+          "to_more_probable": 804,
+          "to_less_probable": 7368,
+          "entropy_change_bits": -0.3759946491111834,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.0
+        },
+        "euler4": {
+          "flips": 3679,
+          "to_more_probable": 514,
+          "to_less_probable": 3165,
+          "entropy_change_bits": -0.047042840973838373,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.00615
+        },
+        "euler8": {
+          "flips": 1548,
+          "to_more_probable": 176,
+          "to_less_probable": 1372,
+          "entropy_change_bits": 0.015363823690182521,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.01795
+        },
+        "heun2": {
+          "flips": 8100,
+          "to_more_probable": 804,
+          "to_less_probable": 7296,
+          "entropy_change_bits": -0.36907570940338275,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.0
+        },
+        "heun4": {
+          "flips": 3264,
+          "to_more_probable": 452,
+          "to_less_probable": 2812,
+          "entropy_change_bits": -0.022098834812172896,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.00945
+        },
+        "rk41": {
+          "flips": 8099,
+          "to_more_probable": 804,
+          "to_less_probable": 7295,
+          "entropy_change_bits": -0.3687421047371291,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.0
+        },
+        "rk42": {
+          "flips": 3200,
+          "to_more_probable": 437,
+          "to_less_probable": 2763,
+          "entropy_change_bits": -0.018368413259972183,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.01
+        },
+        "cached8": {
+          "flips": 1592,
+          "to_more_probable": 337,
+          "to_less_probable": 1255,
+          "entropy_change_bits": -0.02434368547684418,
+          "rarest_mode_freq_exact": 0.0237,
+          "rarest_mode_freq": 0.00945
+        }
+      }
+    }
+  ]
+}

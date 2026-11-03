@@ -1,0 +1,19 @@
+{
+  "split": "artifacts/physicalai_splits_20261027/splits/alpamayo_aligned.parquet",
+  "column": "split",
+  "samples": {
+    "confirmation": {
+      "records": "artifacts/physicalai_test_contexts_v2_20261022/records.json",
+      "range": [
+        0,
+        436
+      ],
+      "clips": 436,
+      "partition": {
+        "train": 391,
+        "test": 41,
+        "alpasim": 4
+      }
+    }
+  }
+}

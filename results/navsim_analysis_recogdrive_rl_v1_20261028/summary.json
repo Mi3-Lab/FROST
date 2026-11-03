@@ -1,0 +1,792 @@
+{
+ "scenes": 500,
+ "margins": {
+  "ade1": 0.05,
+  "flip": 0.02,
+  "pdms": 0.01
+ },
+ "reference": "ddim50_trail_eta0_t1.0",
+ "samplers": {
+  "ddim1_trail_eta0_t1.0": {
+   "spread": 38.158836364746094,
+   "in_range": false,
+   "tau_eff": NaN,
+   "ade1": {
+    "sampler": 30.687183380126953,
+    "reference": 0.8639167547225952,
+    "matched": NaN,
+    "effect": 29.823266625404358,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     29.39065190553665,
+     30.250901409983634
+    ],
+    "effect_ci90": [
+     29.449479737877844,
+     30.191521722078324
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "flip": {
+    "sampler": 0.8836666666666665,
+    "reference": 0.0,
+    "matched": NaN,
+    "effect": 0.8836666666666665,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.8696666666666666,
+     0.898
+    ],
+    "effect_ci90": [
+     0.872,
+     0.8953333333333334
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.012123682757303965,
+    "reference": 0.9034431319183266,
+    "matched": NaN,
+    "effect": -0.8913194491610227,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     -0.9079028433125282,
+     -0.8745210791277154
+    ],
+    "effect_ci90": [
+     -0.9051671720221238,
+     -0.8774791516456139
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "tau_eff_ci95": [
+    NaN,
+    NaN
+   ],
+   "boot_in_range": 0.0
+  },
+  "ddim2_trail_eta0_t1.0": {
+   "spread": 0.6300801634788513,
+   "in_range": false,
+   "tau_eff": NaN,
+   "ade1": {
+    "sampler": 0.9256306290626526,
+    "reference": 0.8639167547225952,
+    "matched": NaN,
+    "effect": 0.06171387434005737,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.03309785574674606,
+     0.09021561741828917
+    ],
+    "effect_ci90": [
+     0.03769237399101257,
+     0.08689470291137695
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "flip": {
+    "sampler": 0.113,
+    "reference": 0.0,
+    "matched": NaN,
+    "effect": 0.113,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.09299166666666665,
+     0.135
+    ],
+    "effect_ci90": [
+     0.09566666666666666,
+     0.132
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.825501872800422,
+    "reference": 0.9034431319183266,
+    "matched": NaN,
+    "effect": -0.07794125911790462,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     -0.09533137058015827,
+     -0.06095265687643898
+    ],
+    "effect_ci90": [
+     -0.09334292907714976,
+     -0.06352543844173886
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "tau_eff_ci95": [
+    NaN,
+    NaN
+   ],
+   "boot_in_range": 0.0
+  },
+  "ddim5_trail_eta0_t1.0": {
+   "spread": 0.19846369326114655,
+   "in_range": true,
+   "tau_eff": 0.4951509597026669,
+   "ade1": {
+    "sampler": 0.6861297488212585,
+    "reference": 0.8639167547225952,
+    "matched": 0.8252200750170904,
+    "effect": -0.17778700590133667,
+    "residual": -0.13909032619583184,
+    "temp_effect": -0.03869667970550483,
+    "residual_ci95": [
+     -0.15775819294527027,
+     -0.12147941354668632
+    ],
+    "residual_ci90": [
+     -0.15426238953095167,
+     -0.12466030616169983
+    ],
+    "effect_ci95": [
+     -0.19504006057977677,
+     -0.1607355520129204
+    ],
+    "effect_ci90": [
+     -0.1924094557762146,
+     -0.16324673891067504
+    ],
+    "temp_effect_ci95": [
+     -0.048562762304747514,
+     -0.029256090165486064
+    ],
+    "temp_effect_ci90": [
+     -0.04671789131787074,
+     -0.030783305726566186
+    ],
+    "equivalent": false
+   },
+   "flip": {
+    "sampler": 0.067,
+    "reference": 0.0,
+    "matched": 0.021145471208919995,
+    "effect": 0.067,
+    "residual": 0.04585452879108001,
+    "temp_effect": 0.021145471208919995,
+    "residual_ci95": [
+     0.02991336663650893,
+     0.06376617100691519
+    ],
+    "residual_ci90": [
+     0.032328994305235365,
+     0.06105577566161376
+    ],
+    "effect_ci95": [
+     0.049666666666666665,
+     0.08634166666666662
+    ],
+    "effect_ci90": [
+     0.052000000000000005,
+     0.08234999999999999
+    ],
+    "temp_effect_ci95": [
+     0.014528568157929305,
+     0.028732940275208448
+    ],
+    "temp_effect_ci90": [
+     0.01572564265766693,
+     0.027432042633182184
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.8786689454203229,
+    "reference": 0.9034431319183266,
+    "matched": 0.9052407896588639,
+    "effect": -0.02477418649800367,
+    "residual": -0.026571844238540976,
+    "temp_effect": 0.0017976577405373062,
+    "residual_ci95": [
+     -0.04154937723836769,
+     -0.012124821716899532
+    ],
+    "residual_ci90": [
+     -0.038961539131408894,
+     -0.014416098401122408
+    ],
+    "effect_ci95": [
+     -0.03927408923535959,
+     -0.011076607793607734
+    ],
+    "effect_ci90": [
+     -0.036963797003776486,
+     -0.013212699927863492
+    ],
+    "temp_effect_ci95": [
+     -0.0011756157472392892,
+     0.0046849927730062395
+    ],
+    "temp_effect_ci90": [
+     -0.0006854864648752513,
+     0.004213229588341727
+    ],
+    "equivalent": false
+   },
+   "tau_eff_ci95": [
+    0.48567853832384694,
+    0.5053147565359567
+   ],
+   "boot_in_range": 1.0
+  },
+  "ddim10_trail_eta0_t1.0": {
+   "spread": 0.7989814281463623,
+   "in_range": false,
+   "tau_eff": NaN,
+   "ade1": {
+    "sampler": 0.9362026453018188,
+    "reference": 0.8639167547225952,
+    "matched": NaN,
+    "effect": 0.07228589057922363,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.056219594180583955,
+     0.08762032836675644
+    ],
+    "effect_ci90": [
+     0.05898938179016113,
+     0.08524319231510162
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "flip": {
+    "sampler": 0.10033333333333334,
+    "reference": 0.0,
+    "matched": NaN,
+    "effect": 0.10033333333333334,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.08166666666666665,
+     0.12034166666666664
+    ],
+    "effect_ci90": [
+     0.08433333333333334,
+     0.11733333333333333
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.8651511984607969,
+    "reference": 0.9034431319183266,
+    "matched": NaN,
+    "effect": -0.03829193345752968,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     -0.04970931977244664,
+     -0.027284426742296454
+    ],
+    "effect_ci90": [
+     -0.04753909895424306,
+     -0.028900816518945986
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "tau_eff_ci95": [
+    NaN,
+    NaN
+   ],
+   "boot_in_range": 0.0
+  },
+  "ddim5_lead_eta0_t1.0": {
+   "spread": 0.3117743730545044,
+   "in_range": true,
+   "tau_eff": 0.77972542571745,
+   "ade1": {
+    "sampler": 0.8341527581214905,
+    "reference": 0.8639167547225952,
+    "matched": 0.8412769155045909,
+    "effect": -0.029763996601104736,
+    "residual": -0.00712415738310046,
+    "temp_effect": -0.022639839218004276,
+    "residual_ci95": [
+     -0.014577209561763374,
+     -6.816519767399443e-07
+    ],
+    "residual_ci90": [
+     -0.013296697789792195,
+     -0.0011471396255031655
+    ],
+    "effect_ci95": [
+     -0.039196734130382535,
+     -0.02034600228071213
+    ],
+    "effect_ci90": [
+     -0.03762736916542053,
+     -0.021857982873916625
+    ],
+    "temp_effect_ci95": [
+     -0.02693855603487272,
+     -0.01843351532365723
+    ],
+    "temp_effect_ci90": [
+     -0.026143623611992628,
+     -0.01903172953261926
+    ],
+    "equivalent": true
+   },
+   "flip": {
+    "sampler": 0.028666666666666663,
+    "reference": 0.0,
+    "matched": 0.008545231552243836,
+    "effect": 0.028666666666666663,
+    "residual": 0.020121435114422825,
+    "temp_effect": 0.008545231552243836,
+    "residual_ci95": [
+     0.01190547952599239,
+     0.029551084831146542
+    ],
+    "residual_ci90": [
+     0.013026854118257152,
+     0.0280933282632232
+    ],
+    "effect_ci95": [
+     0.019666666666666666,
+     0.03833333333333333
+    ],
+    "effect_ci90": [
+     0.02133333333333333,
+     0.037
+    ],
+    "temp_effect_ci95": [
+     0.005127442293497563,
+     0.012574166724054007
+    ],
+    "temp_effect_ci90": [
+     0.005556612502487401,
+     0.011913402225347538
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.9060425320087925,
+    "reference": 0.9034431319183266,
+    "matched": 0.9046568846569781,
+    "effect": 0.0025994000904658865,
+    "residual": 0.0013856473518143453,
+    "temp_effect": 0.0012137527386515412,
+    "residual_ci95": [
+     -0.0027918796032310733,
+     0.005751678564820858
+    ],
+    "residual_ci90": [
+     -0.0020969616502371615,
+     0.005062513220925278
+    ],
+    "effect_ci95": [
+     -0.0008101779930325875,
+     0.006136127185496554
+    ],
+    "effect_ci90": [
+     -0.00029442146353367835,
+     0.005520632108161011
+    ],
+    "temp_effect_ci95": [
+     -0.0010234613129427611,
+     0.0034725745929405976
+    ],
+    "temp_effect_ci90": [
+     -0.0006500827599919823,
+     0.003076385058960862
+    ],
+    "equivalent": true
+   },
+   "tau_eff_ci95": [
+    0.773666822021684,
+    0.7862423150828017
+   ],
+   "boot_in_range": 1.0
+  },
+  "release5_lead_eta1_t1.0": {
+   "spread": 0.1580454260110855,
+   "in_range": true,
+   "tau_eff": 0.3905336245456332,
+   "ade1": {
+    "sampler": 0.8347802758216858,
+    "reference": 0.8639167547225952,
+    "matched": 0.8229011743741471,
+    "effect": -0.029136478900909424,
+    "residual": 0.011879101447538676,
+    "temp_effect": -0.0410155803484481,
+    "residual_ci95": [
+     0.003081780236844431,
+     0.020204399378172592
+    ],
+    "residual_ci90": [
+     0.00456164340993484,
+     0.019094077045169865
+    ],
+    "effect_ci95": [
+     -0.04689549058675766,
+     -0.011067822575569155
+    ],
+    "effect_ci90": [
+     -0.04441089034080505,
+     -0.014618957042694093
+    ],
+    "temp_effect_ci95": [
+     -0.05264248199373104,
+     -0.029638769795341628
+    ],
+    "temp_effect_ci90": [
+     -0.05085709794990734,
+     -0.03135087563590381
+    ],
+    "equivalent": true
+   },
+   "flip": {
+    "sampler": 0.05,
+    "reference": 0.0,
+    "matched": 0.024410209603022565,
+    "effect": 0.05,
+    "residual": 0.025589790396977438,
+    "temp_effect": 0.024410209603022565,
+    "residual_ci95": [
+     0.01634499064783044,
+     0.035785043592203546
+    ],
+    "residual_ci90": [
+     0.017582332306864797,
+     0.03382337595087669
+    ],
+    "effect_ci95": [
+     0.03733333333333333,
+     0.06399999999999999
+    ],
+    "effect_ci90": [
+     0.03933333333333333,
+     0.06166666666666666
+    ],
+    "temp_effect_ci95": [
+     0.017108365824959802,
+     0.032919578298923065
+    ],
+    "temp_effect_ci90": [
+     0.018155360679336274,
+     0.03131841681198544
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.9100045039512185,
+    "reference": 0.9034431319183266,
+    "matched": 0.9057853356799641,
+    "effect": 0.006561372032891866,
+    "residual": 0.004219168271254348,
+    "temp_effect": 0.002342203761637518,
+    "residual_ci95": [
+     -0.0013865783817679416,
+     0.010216355479961386
+    ],
+    "residual_ci90": [
+     -0.0005851064762129432,
+     0.009334702904343545
+    ],
+    "effect_ci95": [
+     0.0006078024543883231,
+     0.012884959180415954
+    ],
+    "effect_ci90": [
+     0.0014964169967590147,
+     0.011904480515668659
+    ],
+    "temp_effect_ci95": [
+     -0.0007117780747839141,
+     0.005400291140446404
+    ],
+    "temp_effect_ci90": [
+     -0.00018483295994538017,
+     0.004912831356594582
+    ],
+    "equivalent": true
+   },
+   "tau_eff_ci95": [
+    0.3858607238488455,
+    0.395308877748949
+   ],
+   "boot_in_range": 1.0
+  },
+  "ddim100_trail_eta0_t1.0": {
+   "spread": 0.4492662250995636,
+   "in_range": false,
+   "tau_eff": NaN,
+   "ade1": {
+    "sampler": 0.906431257724762,
+    "reference": 0.8639167547225952,
+    "matched": NaN,
+    "effect": 0.04251450300216675,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.03913605958223343,
+     0.0457816407084465
+    ],
+    "effect_ci90": [
+     0.03954392969608307,
+     0.045331034064292904
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "flip": {
+    "sampler": 0.024333333333333332,
+    "reference": 0.0,
+    "matched": NaN,
+    "effect": 0.024333333333333332,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     0.015999999999999997,
+     0.033666666666666664
+    ],
+    "effect_ci90": [
+     0.017,
+     0.03234999999999998
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "pdms": {
+    "sampler": 0.904402705312585,
+    "reference": 0.9034431319183266,
+    "matched": NaN,
+    "effect": 0.0009595733942584506,
+    "residual": NaN,
+    "temp_effect": NaN,
+    "residual_ci95": [
+     NaN,
+     NaN
+    ],
+    "residual_ci90": [
+     NaN,
+     NaN
+    ],
+    "effect_ci95": [
+     -0.0023917992035134812,
+     0.0047640474946023595
+    ],
+    "effect_ci90": [
+     -0.0018331942074159447,
+     0.004105130163567411
+    ],
+    "temp_effect_ci95": [
+     NaN,
+     NaN
+    ],
+    "temp_effect_ci90": [
+     NaN,
+     NaN
+    ],
+    "equivalent": false
+   },
+   "tau_eff_ci95": [
+    NaN,
+    NaN
+   ],
+   "boot_in_range": 0.0
+  }
+ },
+ "convergence_check": {
+  "config": "ddim100_trail_eta0_t1.0",
+  "max_abs_scene_diff": {
+   "ade1": 0.19125080108642578,
+   "pdms": 0.4812449614806488
+  },
+  "mean_diff": {
+   "ade1": 0.04251442849636078,
+   "pdms": 0.0009595733942585116,
+   "spread": 0.043202612549066544
+  }
+ },
+ "N1": false,
+ "N2": {
+  "ddim5_trail_eta0_t1.0": false,
+  "ddim10_trail_eta0_t1.0": false
+ },
+ "N3": false
+}
