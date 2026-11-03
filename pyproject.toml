@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frost"
+version = "1.0.0"
+description = "FROST: matched-temperature tests of few-step flow-matching samplers in driving policies"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Anonymous" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11"]
+
+[project.optional-dependencies]
+# Statistics, analyses, table generators and tests (the versions used for the paper are pinned in envs/analysis.txt).
+analysis = ["numpy==2.3.5", "scipy==1.16.3", "pandas==2.3.3", "pyarrow==22.0.0", "polars==1.35.2", "pytest==8.4.2"]
+# Figure generators.
+figures = ["matplotlib==3.10.7"]
+# Model probes: each family needs its own environment (envs/*.txt); this extra only lists the common core.
+probe = ["torch==2.8.0", "transformers", "huggingface_hub", "pillow"]
+
+[project.urls]
+Repository = "https://github.com/anonymous/frost"
+
+[tool.setuptools.packages.find]
+include = ["frost*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

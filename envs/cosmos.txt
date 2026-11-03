@@ -1,0 +1,19 @@
+# Environment "cosmos" (Python 3.12): Cosmos 3 Nano AV-policy probe (frost.probes.cosmos3nano_probe).
+# Created on the cluster with uv; versions not frozen beyond the pins below. diffusers was installed from the main branch
+# (Cosmos3OmniPipeline and CosmosActionCondition were not in a release at the time).
+# uv pip install --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cu128 -r envs/cosmos.txt
+torch==2.8.0
+torchvision==0.23.0
+diffusers @ git+https://github.com/huggingface/diffusers.git
+accelerate
+av
+huggingface_hub
+imageio
+imageio-ffmpeg
+transformers
+numpy
+scipy
+pillow
+pandas
+pyarrow
+physical-ai-av
